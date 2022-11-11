@@ -1,0 +1,142 @@
+{
+    "categories" : [
+        {
+            "id" : 1,
+            "title" : "Lenovo",
+            "series" : [
+                "ThinkPad L - E series",
+                "ThinkPad T series",
+                "ThinkPad X1 Carbon"
+            ]
+        },
+        {
+            "id" : 2, 
+            "title" : "Mac",
+            "series" : [
+                "iMac - Mac Pro",
+                "MacBook - Air",
+                "MacBook - Pro",
+                "MacBook - M1"
+            ]
+        },
+        {
+            "id" : 3,
+            "title" : "Dell",
+            "series" : [
+                "Dell - XPS",
+                "Dell - Gaming"
+            ]
+        }
+    ],
+    "products" : [
+        {
+            "id" : 1,
+            "title" : "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
+            "price" : "10.500.000 đ",
+            "salePrice" : null,
+            "isNew" : true,
+            "isDeleted" : false,
+            "categoryId" : 1,
+            "quantity" : 4
+        },
+        {
+            "id" : 2,
+            "title" : "ThinkPad E14 Gen 4 - 2022 - 14 inch FHD - Core I5 1235U 8GB 256GB SSD",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
+            "price" : "10.500.000 đ",
+            "salePrice" : null,
+            "isDeleted" : false,
+            "isNew" : true,
+            "categoryId" : 1,
+            "quantity" : 4
+        },
+        {
+            "id" : 3,
+            "title" : "ThinkPad X1 Carbon Gen 8 FHD - Quad Core I5 10210U / RAM 16GB / 256GB / New 99%",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
+            "price" : "10.500.000 đ",
+            "salePrice" : null,
+            "isDeleted" : false,
+            "isNew" : true,
+            "categoryId" : 1,
+            "quantity" : 4
+        },
+        {
+            "id" : 4,
+            "title" : "【New 99% 】 ThinkPad X1 Carbon Gen 8 - 4K HDR - Quad Core i7 10510U / RAM 16GB / 512GB",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
+            "price" : "10.500.000 đ",
+            "salePrice" : null,
+            "isDeleted" : false,
+            "isNew" : true,
+            "categoryId" : 1,
+            "quantity" : 4
+        },
+        {
+            "id" : 5,
+            "title" : "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
+            "img" : "ThinkPad T14s Gen 3 14inch FHD+ - Ryzen Pro 7 6850U 16GB 512GB SSD",
+            "price" : "10.500.000 đ",
+            "salePrice" : null,
+            "isDeleted" : false,
+            "isNew" : true,
+            "categoryId" : 1,
+            "quantity" : 4
+        }
+    ],
+    "cpu" : [
+        {
+            "id" : 1,
+            "name" : "Core I5"
+        },
+        {
+            "id" : 2,
+            "name" : "Core I7"
+        },
+        {
+            "id" : 3,
+            "name" : "M1"
+        },
+        {
+            "id" : 4,
+            "name" : "I9"
+        },
+        {
+            "id" : 5,
+            "name" : "Amd Ryzen 5"
+        },
+        {
+            "id" : 6,
+            "name" : "Amd Ryzen 7"
+        }
+    ],
+    "ssd" : [ 
+        {
+            "id" : 1,
+            "name" : "256GB"
+        },
+        {
+            "id" : 2,
+            "name" : "512GB"
+        },
+        {
+            "id" : 3,
+            "name" : "1TB"
+        }
+    ], 
+    "stateOfProducts" : [
+        {
+            "id" : 1,
+            "status" : "New 100%"
+        },
+        {
+            "id" : 2,
+            "status" : "Used 99%"
+        },
+        {
+            "id" : 3,
+            "status" : "Used 98%"
+        }
+    ]
+}
