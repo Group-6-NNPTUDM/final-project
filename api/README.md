@@ -7,3 +7,7 @@ Doc :
 + Nodemon : https://nodemon.io/
 
 If use postman for testing api, can import file Fake API.postman_collection.json.
+
+How to run the project : 
+
+Step 1 : Run command : npm install to download package and dependencies in package.json file.
