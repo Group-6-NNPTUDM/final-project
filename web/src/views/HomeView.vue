@@ -1,11 +1,11 @@
 <template>
-  <div class="Home">
-    <Header/>
-    <h1>
-      This is a home page
-    </h1>
+  <div class="home-page">
+    <Header class="header-block"></Header>
+    <div class="body-block">
+      Đây là body
+    </div>
+    <Footer class="footer-block"></Footer>
   </div>
-  <Footer/>
 </template>
 
 <script>
@@ -21,3 +21,9 @@ export default {
 }
 
 </script>
+
+<style>
+.body-block {
+  height: auto;
+}
+</style>
