@@ -46,7 +46,7 @@
           </div>
         </div>
         <!-- Render Laptop -->
-        <div>
+        <div class="row laptop-thinkpad mb-2">
           <ProductDetail :data="products" />
         </div>
       </div>
@@ -71,12 +71,10 @@ export default {
       products : []
     }
   },
-  mounted() {
-    axios.get('http://localhost:8000/api/products')
-      .then((res) => {
-        const size = 4;
-        this.products = res.data.sort((first,second) => first.price.localeCompare(second.price)).slice(0, size);
-      }).catch(error => console.log(error));
+  async mounted() {
+    const result = await getLaptop();
+
+    this.products = result;
   },
   name: 'Home',
   components: {
@@ -84,7 +82,19 @@ export default {
     Footer,
     ProductDetail,
   }
+}
 
+const getLaptop = async () => {
+  const url = 'http://localhost:8000/api/products';
+  let products = []
+
+  try {
+    await axios.get(url).then(res => products = res.data).catch(err => console.log(err));
+
+    return products;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 </script>
