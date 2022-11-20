@@ -24,7 +24,16 @@ const routes = [
     path: '/dang-ky',
     name: 'dang-ky',
     component: () => import('../views/RegisterView.vue')
+  },
+  {
+    path: '/dang-nhap',
+    name: 'dang-nhap',
+    component: () => import('../views/LoginView.vue')
   }
+
+
+
+
 ]
 
 const router = createRouter({
