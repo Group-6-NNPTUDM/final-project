@@ -1,156 +1,232 @@
 {
-  "categories": [
-    {
-      "id": 1,
-      "title": "Lenovo",
-      "series": [
-        "ThinkPad L - E series",
-        "ThinkPad T series",
-        "ThinkPad X1 Carbon"
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Mac",
-      "series": [
-        "iMac - Mac Pro",
-        "MacBook - Air",
-        "MacBook - Pro",
-        "MacBook - M1"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Dell",
-      "series": ["Dell - XPS", "Dell - Gaming"]
-    }
-  ],
-  "products": [
-    {
-      "id": 1,
-      "title": "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": "30.500.000 đ",
-      "salePrice": null,
-      "isNew": true,
-      "isDeleted": false,
-      "categoryId": 1,
-      "modalType": "ThinkPad",
-      "quantity": 4
-    },
-    {
-      "id": 2,
-      "title": "ThinkPad E14 Gen 4 - 2022 - 14 inch FHD - Core I5 1235U 8GB 256GB SSD",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": "40.500.000 đ",
-      "salePrice": null,
-      "isDeleted": false,
-      "isNew": true,
-      "categoryId": 1,
-      "modalType": "ThinkPad",
-      "quantity": 4
-    },
-    {
-      "id": 3,
-      "title": "ThinkPad X1 Carbon Gen 8 FHD - Quad Core I5 10210U / RAM 16GB / 256GB / New 99%",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": "50.500.000 đ",
-      "salePrice": null,
-      "isDeleted": false,
-      "isNew": true,
-      "categoryId": 1,
-      "modalType": "ThinkPad",
-      "quantity": 4
-    },
-    {
-      "id": 4,
-      "title": "【New 99% 】 ThinkPad X1 Carbon Gen 8 - 4K HDR - Quad Core i7 10510U / RAM 16GB / 512GB",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": "10.500.000 đ",
-      "salePrice": null,
-      "isDeleted": false,
-      "isNew": true,
-      "categoryId": 1,
-      "modalType": "ThinkPad",
-      "quantity": 4
-    },
-    {
-      "id": 5,
-      "title": "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": "20.500.000 đ",
-      "salePrice": null,
-      "isDeleted": false,
-      "isNew": true,
-      "categoryId": 1,
-      "modalType": "ThinkPad",
-      "quantity": 4
-    },
-    {
-      "id": 6,
-      "title": "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
-      "img": "https://mac24h.vn/images/thumbnails/300/300/detailed/40/Macbook_Pro_16_in_h7gr-jv.png?t=1668757217",
-      "price": "20.500.000 đ",
-      "salePrice": null,
-      "isDeleted": false,
-      "isNew": true,
-      "categoryId": 1,
-      "modalType": "Apple",
-      "quantity": 4
-    }
-  ],
-  "cpu": [
-    {
-      "id": 1,
-      "name": "Core I5"
-    },
-    {
-      "id": 2,
-      "name": "Core I7"
-    },
-    {
-      "id": 3,
-      "name": "M1"
-    },
-    {
-      "id": 4,
-      "name": "I9"
-    },
-    {
-      "id": 5,
-      "name": "Amd Ryzen 5"
-    },
-    {
-      "id": 6,
-      "name": "Amd Ryzen 7"
-    }
-  ],
-  "ssd": [
-    {
-      "id": 1,
-      "name": "256GB"
-    },
-    {
-      "id": 2,
-      "name": "512GB"
-    },
-    {
-      "id": 3,
-      "name": "1TB"
-    }
-  ],
-  "stateOfProducts": [
-    {
-      "id": 1,
-      "status": "New 100%"
-    },
-    {
-      "id": 2,
-      "status": "Used 99%"
-    },
-    {
-      "id": 3,
-      "status": "Used 98%"
-    }
-  ]
+    "categories" : [
+        {
+            "id" : "5544d660-7075-45d1-8f8a-f287fc4c2648",
+            "title" : "Lenovo",
+            "series" : [
+                "ThinkPad L - E series",
+                "ThinkPad T series",
+                "ThinkPad X1 Carbon"
+            ]
+        },
+        {
+            "id" : "ede880a7-63df-4eac-b9de-149115fbb43a", 
+            "title" : "Apple",
+            "series" : [
+                "iMac - Mac Pro",
+                "MacBook - Air",
+                "MacBook - Pro",
+                "MacBook - M1"
+            ]
+        },
+        {
+            "id" : "5b497990-fdfd-4054-94e9-2807a8fe7d7c",
+            "title" : "Dell",
+            "series" : [
+                "Dell - XPS",
+                "Dell - Gaming"
+            ]
+        }
+    ],
+    "products" : [
+        {
+            "id" : "c6d9c73d-09dc-408d-8ac6-3f22c0e4be76",
+            "title" : "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
+            "price" : 30500000,
+            "salePrice" : null,
+            "isNew" : true,
+            "isDeleted" : false,
+            "categories" : "Lenovo",
+            "quantity" : 4
+        },
+        {
+            "id" : "a779c179-db28-4405-8700-5bea9b7fd7bb",
+            "title" : "ThinkPad E14 Gen 4 - 2022 - 14 inch FHD - Core I5 1235U 8GB 256GB SSD",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
+            "price" : 40500000,
+            "salePrice" : null,
+            "isDeleted" : false,
+            "isNew" : true,
+            "categories" : "Lenovo",
+            "quantity" : 4
+        },
+        {
+            "id" : "14a21e97-5036-4ee2-ad49-8664cab7fa59",
+            "title" : "ThinkPad X1 Carbon Gen 8 FHD - Quad Core I5 10210U / RAM 16GB / 256GB / New 99%",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
+            "price" : 50500000,
+            "salePrice" : null,
+            "isDeleted" : false,
+            "isNew" : true,
+            "categories" : "Lenovo",
+            "quantity" : 4
+        },
+        {
+            "id" : "4090f608-854d-44b4-ba82-378dba747911",
+            "title" : "【New 99% 】 ThinkPad X1 Carbon Gen 8 - 4K HDR - Quad Core i7 10510U / RAM 16GB / 512GB",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
+            "price" : 10500000,
+            "salePrice" : null,
+            "isDeleted" : false,
+            "isNew" : true,
+            "categories" : "Lenovo",
+            "quantity" : 4
+        },
+        {
+            "id" : "53d4f03a-bfce-4039-9a27-5937f707c5c2",
+            "title" : "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
+            "price" : 20500000,
+            "salePrice" : null,
+            "isDeleted" : false,
+            "isNew" : true,
+            "categories" : "Lenovo",
+            "quantity" : 4
+        }, 
+        {
+            "id": "a11a9130-a200-492e-85af-098f1ac9c594", 
+            "title" : "Apple Pro Display XDR (Standard glass)",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
+            "price" : 119000000,
+            "salePrice" : null,
+            "isNew" : true,
+            "categories" : "Apple",
+            "quantity" : 3
+        },
+        {
+            "id": "77e8563f-ea1d-4250-898b-7b5ba9dce5fb", 
+            "title" : "Apple Pro Display XDR (Standard glass)",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
+            "price" : 119000000,
+            "salePrice" : null,
+            "isNew" : true,
+            "categories" : "Apple",
+            "quantity" : 3
+        },
+        {
+            "id": "9ce01bf0-07ab-4975-b5da-566bb4a5dfd8", 
+            "title" : "Apple Pro Display XDR (Standard glass)",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
+            "price" : 119000000,
+            "salePrice" : null,
+            "isNew" : true,
+            "categories" : "Apple",
+            "quantity" : 3
+        },
+        {
+            "id": "2ccd26f6-8861-44aa-9f27-42fc57e7f41f", 
+            "title" : "Apple Pro Display XDR (Standard glass)",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
+            "price" : 119000000,
+            "salePrice" : null,
+            "isNew" : true,
+            "categories" : "Apple",
+            "quantity" : 3
+        },
+        {
+            "id": "bf146594-e4e1-4661-a5ed-1cfbaf3c4a00", 
+            "title" : "Alienware M15 -R5 AMD Ryzen 7 5800H 16GB 512GB NVIDIA RTX 3070 Ti 8GB",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_M15_R6_8a1m-ba_3vfx-f5_2wva-gl.png?t=1667284358",
+            "price" : 38500000,
+            "salePrice" : null,
+            "isNew" : true,
+            "categories" : "Dell",
+            "quantity" : 3
+        },
+        {
+            "id": "4db2e503-ec5c-4e6d-ba4d-9a08bdd975c8", 
+            "title" : "Alienware M15 R6 (2021) - CORE I7 11800H / 16GB / 512GB SSD / RTX 3060 6GB / QHD 240HZ",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_M15_R6_8a1m-ba_iro8-7u.png?t=1660208774",
+            "price" : 42500000,
+            "salePrice" : null,
+            "isNew" : true,
+            "categories" : "Dell",
+            "quantity" : 3
+        },
+        {
+            "id": "42be6bc1-285f-468b-8dca-0ab9b5eb1a3b", 
+            "title" : "Alienware M17 R5 (2022) - Ryzen 9 6900H / 16GB / 1TB SSD / RTX 3070 Ti 8GB / FHD 165Hz",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/355C707E-FE0B-440C-B8F3-E6A2B54629C8.png?t=1666951429",
+            "price" : 53000000,
+            "salePrice" : null,
+            "isNew" : true,
+            "categories" : "Dell",
+            "quantity" : 3
+        },
+        {
+            "id": "d4042008-e782-45fb-828e-5dfc441f9f9a", 
+            "title" : "Alienware X15 R2 (2022) - CORE I7 12700H / 16GB / 512GB SSD / RTX 3070 Ti 8GB / FHD 360HZ",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_x15_R2_3_cblf-dm_wxhv-q6.png?t=1662808625",
+            "price" : 59000000,
+            "salePrice" : null,
+            "isNew" : true,
+            "categories" : "Dell",
+            "quantity" : 3
+        },
+        {
+            "id": "5bea0a69-6345-4f7b-b70c-8a11cbbc5a94", 
+            "title" : "DELL G15 5510 (2021) - CORE I5 10200H / 8GB / 256GB SSD / RTX 3050 4GB / FHD 120HZ",
+            "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/DELL_G15_wce0-5b.png?t=1659804578",
+            "price" : 19900000,
+            "salePrice" : null,
+            "isNew" : true,
+            "categories" : "Dell",
+            "quantity" : 3
+        }
+    ],
+    "cpu" : [
+        {
+            "id" : "afd48db2-15ba-43c1-bf8b-d6e4b2b05a7b",
+            "name" : "Core I5"
+        },
+        {
+            "id" : "ce670d75-8768-4b80-a09d-02825ec61f8d",
+            "name" : "Core I7"
+        },
+        {
+            "id" : "f8024769-818a-4126-9d17-20168f879628",
+            "name" : "M1"
+        },
+        {
+            "id" : "a1eb7eb7-d0fb-4c0d-a5a3-3b395a7f2bbc",
+            "name" : "I9"
+        },
+        {
+            "id" : "0c2ac374-e819-43db-b82c-012de9a2ebcf",
+            "name" : "Amd Ryzen 5"
+        },
+        {
+            "id" : "d66731e0-60a6-496d-96dc-d7e95413c563",
+            "name" : "Amd Ryzen 7"
+        }
+    ],
+    "ssd" : [ 
+        {
+            "id" : "70aef410-8ead-4823-8acb-c2a898dd8bbc",
+            "name" : "256GB"
+        },
+        {
+            "id" : "5a57e472-6864-4b7a-bf5a-a3d3c1a1823e",
+            "name" : "512GB"
+        },
+        {
+            "id" : "650f4df2-3177-4449-a3c7-d6370951eae5",
+            "name" : "1TB"
+        }
+    ], 
+    "stateOfProducts" : [
+        {
+            "id" : "e970c12d-35a1-4623-9d7e-d2ff0f2f3552",
+            "status" : "New 100%"
+        },
+        {
+            "id" : "a157a844-79f6-48d8-9939-ae6e7b5153e2",
+            "status" : "Used 99%"
+        },
+        {
+            "id" : "3e475c6e-eea2-4c69-980d-3e50ba9b45b0",
+            "status" : "Used 98%"
+        }
+    ]
 }

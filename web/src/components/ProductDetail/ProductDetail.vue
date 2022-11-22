@@ -4,7 +4,7 @@
       <img class="card-img-top" v-bind:src="item.img" alt="Card image cap">
       <div class="card-body">
         <h6 class="card-title">{{item.title}}</h6>
-        <p class="card-text"><small class="text-muted">{{item.price}}</small></p>
+        <p class="card-text"><small class="text-muted">{{item.price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'})}}</small></p>
       </div>
     </div>
   </div>
