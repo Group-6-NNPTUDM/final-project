@@ -2,7 +2,7 @@
   <div>
     <ul class = "list-unstyled">
     <li class="nav-item link-3" v-for="item in categories" v-bind:key="item.index"  >
-      <router-link :to="`/san-pham/${item.id}`">
+      <router-link :to="`/san-pham/${item.title}`">
       <a class="nav-link my-a" href="">
         {{item.title}}
       </a>

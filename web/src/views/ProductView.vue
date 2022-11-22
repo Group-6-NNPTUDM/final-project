@@ -24,7 +24,7 @@
             <div class="card-body">
               <h6 class="card-title">{{ item.title }}</h6>
               <p class="card-text">
-                <small class="text-muted">{{ item.price }} {{$route.params.id}}</small>
+                <small class="text-muted">{{ item.price }}</small>
               </p>
 
             </div>
@@ -68,8 +68,8 @@ export default {
 
   computed:{
   filteredItems(){
-    if (this.$route.params.id != null){
-      return this.products.filter(item=>item.categoryId == this.$route.params.id);
+    if (this.$route.params.title != null){
+      return this.products.filter(item=>item.categories == this.$route.params.title);
     }else{
       return this.products;
     }

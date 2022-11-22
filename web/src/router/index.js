@@ -21,7 +21,7 @@ const routes = [
     component: () => import('../views/ProductView.vue')
   },
   {
-    path: '/san-pham/:id',
+    path: '/san-pham/:title',
     name: 'san-pham-category',
     component: () => import('../views/ProductView.vue')
   },
