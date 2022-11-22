@@ -99,7 +99,10 @@ export default {
   },
   computed:{
   filteredItems(){
-    if (this.$route.params.title == null){
+
+    if (this.$route.params.title != null){
+      return this.products.filter(item=>item.categories == this.$route.params.title);
+    }else{
       return this.products;
     }
 
