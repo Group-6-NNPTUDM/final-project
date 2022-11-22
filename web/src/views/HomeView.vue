@@ -39,19 +39,54 @@
             </div>
           </div>
         </div>
-        <!-- Render Items -->
+        <!-- Thinkpad Menu -->
         <div class="row mt-5">
           <div class="col-12">
-            <h4 class="badge bg-primary text-wrap">Laptop ThinkPad</h4>
+            <h4 class="badge bg-primary text-wrap">Sản phẩm nổi bật : THINKPAD</h4>
           </div>
         </div>
-        <!-- Render Laptop -->
-        <div>
-          <ProductDetail :data="products" />
+        <!-- Render Laptop ThinkPad-->
+        <div class="row">
+          <div class="col-9">
+            <ProductDetail :data="products.lenovo" />
+          </div>
+          <div class="col-3" style="height: auto;">
+            <img style="width:100%; height: 100%;" src="https://mac24h.vn/images/companies/1/ThinkPad/T14Giam1tr.JPG?1629468259506" alt="">
+          </div>
+        </div>
+        <!-- Apple Menu -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="badge bg-primary text-wrap">Sản phẩm nổi bật : APPLE</h4>
+          </div>
+        </div>
+        <!-- Render Apple Items -->
+        <div class="row">
+          <div class="col-9">
+            <ProductDetail :data="products.apple" />
+          </div>
+          <div class="col-3" style="height: auto;">
+            <img style="width:100%; height: 100%;" src="https://mac24h.vn/images/companies/1/Banner/banner%20nho%CC%89/tong%20dai%2022.jpg?1636369232783" alt="">
+          </div>
+        </div>
+        <!-- Dell Menu -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="badge bg-primary text-wrap">Sản phẩm nổi bật : DELL</h4>
+          </div>
+        </div>
+        <!-- Render Dell Items -->
+        <div class="row">
+          <div class="col-9">
+            <ProductDetail :data="products.dell" />
+          </div>
+          <div class="col-3" style="height: auto;">
+            <img style="width:100%; height: 100%;" src="https://mac24h.vn/images/companies/1/LAPTOP/Alienware%20M17%202019/X1%20extreme/DELL%207373/Macbook%2012/Surface%20X/t480/T490/x1%20carbon/TRA%CC%89%20GOP%2020%25.jpg?1575991878361" alt="">
+          </div>
         </div>
       </div>
     </div>
-    <Footer class="footer-block"></Footer>
+    <Footer class="footer-block mt-5"></Footer>
   </div>
 </template>
 
@@ -64,19 +99,28 @@ import axios from 'axios'
 import Header from '../components/Header/Header.vue'
 import Footer from '../components/Footer/Footer.vue'
 import ProductDetail from '../components/ProductDetail/ProductDetail.vue'
+import CategoriesType from '../constants/categoriesConstant'
+import Url from '../constants/urlConstant'
+
 
 export default {
   data() {
     return {
-      products : []
+      products : {
+        lenovo: [],
+        apple: [],
+        dell: []
+      }
     }
   },
-  mounted() {
-    axios.get('http://localhost:8000/api/products')
-      .then((res) => {
-        const size = 4;
-        this.products = res.data.sort((first,second) => first.price.localeCompare(second.price)).slice(0, size);
-      }).catch(error => console.log(error));
+  async mounted() {
+    this.products.lenovo = await getItemsByCategory(CategoriesType.LENOVO);
+    this.products.apple = await getItemsByCategory(CategoriesType.MAC);
+    this.products.dell = await getItemsByCategory(CategoriesType.DELL);
+
+    console.log(this.products.apple, "Apple")
+    console.log(this.products.lenovo, "Lenovo")
+    console.log(this.products.dell, "dell")
   },
   name: 'Home',
   components: {
@@ -85,6 +129,14 @@ export default {
     ProductDetail,
   }
 
+}
+
+const getItemsByCategory = async (type) => {
+  const res = await axios.get(`${Url.URL}products?categories=${type}&_sort=price&_order=desc&_limit=4`)
+    .then((res) => res.data)
+    .catch((err) => console.log(err));
+
+  return res;
 }
 
 </script>
