@@ -17,7 +17,12 @@ const routes = [
   },
   {
     path: '/san-pham',
-    name: 'san-pham',
+
+    component: () => import('../views/ProductView.vue')
+  },
+  {
+    path: '/san-pham/:id',
+    name: 'san-pham-category',
     component: () => import('../views/ProductView.vue')
   },
   {

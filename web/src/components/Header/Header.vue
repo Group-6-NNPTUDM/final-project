@@ -21,6 +21,9 @@
               <a href="#" class="nav-link text-white">DELL - XPS</a>
             </li>
             <li>
+              <a href="#" class="nav-link text-white">Sản phẩm</a>
+            </li>
+            <li>
               <a href="#" class="nav-link text-white">Hỗ Trợ</a>
             </li>
           </ul>

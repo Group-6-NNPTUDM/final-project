@@ -1,5 +1,12 @@
 {
   "categories": [
+
+    {
+      "id": "",
+      "title": "All",
+      "series": [
+      ]
+    },
     {
       "id": 1,
       "title": "Lenovo",
@@ -46,7 +53,7 @@
       "salePrice": null,
       "isDeleted": false,
       "isNew": true,
-      "categoryId": 1,
+      "categoryId": 2,
       "modalType": "ThinkPad",
       "quantity": 4
     },
@@ -58,7 +65,7 @@
       "salePrice": null,
       "isDeleted": false,
       "isNew": true,
-      "categoryId": 1,
+      "categoryId": 3,
       "modalType": "ThinkPad",
       "quantity": 4
     },
@@ -70,7 +77,7 @@
       "salePrice": null,
       "isDeleted": false,
       "isNew": true,
-      "categoryId": 1,
+      "categoryId": 2,
       "modalType": "ThinkPad",
       "quantity": 4
     },
@@ -82,7 +89,7 @@
       "salePrice": null,
       "isDeleted": false,
       "isNew": true,
-      "categoryId": 1,
+      "categoryId": 3,
       "modalType": "ThinkPad",
       "quantity": 4
     },

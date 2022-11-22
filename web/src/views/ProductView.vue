@@ -1,51 +1,95 @@
 <template>
-    <div>  
-        <p>Test modal<a href="#" @click="modalToggle">now</a></p>
-        <div>
-            <button type="button" class="btn btn-primary" @click="modalToggle">My Modal</button>
-                <div
-                ref="modal"
-                class="modal fade"
-                :class="{ show: active, 'd-block': active }"
-                tabindex="-1"
-                role="dialog">
-                <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                        @click="modalToggle">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div v-if="active" class="modal-backdrop fade show"></div>
-            </div>
-    </div>
-    </template>
+  <div class="product-page">
+    <Header />
+    <div class="row" style="margin: unset; padding-top: 40px">
+      <div class="col-sm-4">
+        <div class="can-giua" style="padding-top: 20px">
+          <ul class="mb-0 nav nav-food can-giua bo-goc my-list-menu">
+            <ProductCategory />
+          </ul>
+        </div>
+      </div>
 
-<script>
+      <hr class="d-sm-none" />
+      <div class="col-sm-8">
+        <div class="card-group">
+            <div class="my-flex" style="padding-top:20px" v-for="item in filteredItems" v-bind:key="item.index">
+          <div class="card" >
+            
+            <img
+              class="card-img-top"
+              v-bind:src="item.img"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h6 class="card-title">{{ item.title }}</h6>
+              <p class="card-text">
+                <small class="text-muted">{{ item.price }} {{$route.params.id}}</small>
+              </p>
+
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </div>
+</template>
+  
+  <script>
+import axios from "axios";
+import "@/assets/css/product/style.css";
+import Header from "../components/Header/Header.vue";
+import Footer from "../components/Footer/Footer.vue";
+import ProductCategory from "../components/ProductDetail/ProductCategory.vue";
+
+
+
 export default {
-data() {
+  data() {
     return {
-    active: false,
+      products: [],
+    };
+  },
+  async mounted() {
+    const result = await getLaptop();
+    this.products = result;
+  },
+
+  name: "ProductPage",
+  components: {
+    Header,
+    Footer,
+    
+    ProductCategory,
+  },
+
+  computed:{
+  filteredItems(){
+    if (this.$route.params.id != null){
+      return this.products.filter(item=>item.categoryId == this.$route.params.id);
+    }else{
+      return this.products;
     }
-},
-methods: {
-    modalToggle() {
-    const body = document.querySelector("body")
-    this.active = !this.active
-    this.active ? body.classList.add("modal-open") : body.classList.remove("modal-open")
-    },
-},
+   
+  }
 }
+};
+const getLaptop = async () => {
+  const url = "http://localhost:8000/api/products";
+  let products = [];
+  try {
+    await axios
+      .get(url)
+      .then((res) => (products = res.data))
+      .catch((err) => console.log(err));
+
+    return products;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 </script>
+  
