@@ -103,6 +103,8 @@ export default {
     if (this.$route.params.title != null){
       return this.products.filter(item=>item.categories == this.$route.params.title);
     }else{
+
+    if (this.$route.params.title == null){
       return this.products;
     }
 
