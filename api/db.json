@@ -1,6 +1,14 @@
 {
     "categories" : [
         {
+            
+            "id" : "",
+            "title" : "All",
+            "series" : [
+            ]
+        },
+        {
+            
             "id" : "5544d660-7075-45d1-8f8a-f287fc4c2648",
             "title" : "Lenovo",
             "series" : [
@@ -33,7 +41,7 @@
             "id" : "c6d9c73d-09dc-408d-8ac6-3f22c0e4be76",
             "title" : "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
             "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-            "price" : 30500000,
+            "price" : 50500000,
             "salePrice" : null,
             "isNew" : true,
             "isDeleted" : false,
@@ -55,7 +63,7 @@
             "id" : "14a21e97-5036-4ee2-ad49-8664cab7fa59",
             "title" : "ThinkPad X1 Carbon Gen 8 FHD - Quad Core I5 10210U / RAM 16GB / 256GB / New 99%",
             "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-            "price" : 50500000,
+            "price" : 30500000,
             "salePrice" : null,
             "isDeleted" : false,
             "isNew" : true,
