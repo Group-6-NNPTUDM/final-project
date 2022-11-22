@@ -13,11 +13,8 @@
 <script>
 
 export default {
-  created() {console.log(this.data)},
-  mounted() {
-  },
   props: {
-    data : Array
+    data : []
   },
   name: 'ProductDetail',
 }
