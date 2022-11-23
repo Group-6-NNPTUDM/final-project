@@ -16,11 +16,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/san-pham',
-    name: 'san-pham',
-    component: () => import('../views/ProductView.vue')
-  },
-  {
     path: '/dang-ky',
     name: 'dang-ky',
     component: () => import('../views/RegisterView.vue')
@@ -29,11 +24,11 @@ const routes = [
     path: '/dang-nhap',
     name: 'dang-nhap',
     component: () => import('../views/LoginView.vue')
+  },
+  {
+    path:'/san-pham/:id',
+    component: () => import('../views/ProductView.vue')
   }
-
-
-
-
 ]
 
 const router = createRouter({

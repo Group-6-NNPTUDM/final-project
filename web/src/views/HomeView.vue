@@ -117,10 +117,6 @@ export default {
     this.products.lenovo = await getItemsByCategory(CategoriesType.LENOVO);
     this.products.apple = await getItemsByCategory(CategoriesType.MAC);
     this.products.dell = await getItemsByCategory(CategoriesType.DELL);
-
-    console.log(this.products.apple, "Apple")
-    console.log(this.products.lenovo, "Lenovo")
-    console.log(this.products.dell, "dell")
   },
   name: 'Home',
   components: {
@@ -128,7 +124,6 @@ export default {
     Footer,
     ProductDetail,
   }
-
 }
 
 const getItemsByCategory = async (type) => {
