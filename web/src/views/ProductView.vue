@@ -14,7 +14,7 @@
       <div class="col-sm-8">
         <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-    {{name}}
+    {{name}} 
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
     <li><button class="dropdown-item" type="button" v-on:click="sortedLowPrice">Sắp theo giá: Thấp -> Cao</button></li>
@@ -36,17 +36,37 @@
             <div class="card-body">
               <h6 class="card-title">{{ item.title }}</h6>
               <p class="card-text">
-                <small class="text-muted">{{ item.price }}</small>
+                <small class="text-muted">{{item.price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'})}}</small>
               </p>
-
             </div>
+            
+
+
           </div>
+          
         </div>
         </div>
+
+
+         <!-- page -->
+<div class="card text-center m-3">
+        <h3 class="card-header">Page here</h3>
+        <div class="card-body">
+            <div v-for="item in pageOfItems" :key="item.id">{{item.name}}</div>
+        </div>
+        <div class="card-footer pb-0 pt-3">
+            <jw-pagination :items="exampleItems" @changePage="onChangePage" :labels="customLabels"></jw-pagination>
+            
+        </div>
+    </div>
+
+            <!-- endpage -->
+
       </div>
     </div>
     <Footer />
   </div>
+  
 </template>
   
   <script>
@@ -55,18 +75,77 @@ import "@/assets/css/product/style.css";
 import Header from "../components/Header/Header.vue";
 import Footer from "../components/Footer/Footer.vue";
 import ProductCategory from "../components/ProductDetail/ProductCategory.vue";
+//import paginate from 'jw-paginate';
 
 
+//page
+const exampleItems = [...Array(150).keys()].map(i => ({ id: (i+1), name: 'Item ' + (i+1) }));
+
+const customLabels = {
+    first: '<<',
+    last: '>>',
+    previous: '<',
+    next: '>'
+};
+const defaultLabels = {
+        first: 'First',
+        last: 'Last',
+        previous: 'Previous',
+        next: 'Next'
+    };
+
+    
+//end page
 
 
 export default {
+  //page
+  props: {
+            items: {
+                type: Array,
+                required: true
+            },
+            initialPage: {
+                type: Number,
+                default: 1
+            },
+            pageSize: {
+                type: Number,
+                default: 10
+            },
+            maxPages: {
+                type: Number,
+                default: 10
+            },
+            labels: {
+                type: Object,
+                default: () => defaultLabels
+            },
+            styles: {
+                type: Object
+            },
+            disableDefaultStyles: {
+                type: Boolean,
+                default: false
+            }
+        },
+        //endpage
   data() {
     return {
       products: [],
       products_item_category:[],
       name: "Sắp xếp theo...",
+      //page
+      exampleItems,
+      pageOfItems: [],
+      customLabels,
+
     };
   },
+  
+  //endpage
+
+
   async mounted() {
     const result = await getLaptop();
     this.products = result;
@@ -82,7 +161,12 @@ export default {
   sortedLowPrice(){
     this.name = "Sắp theo giá: Thấp -> Cao";
     this.products.sort((a, b) => a.price > b.price ? 1: -1 );
+    
 },
+
+//page
+
+        //endpage
 
   sortedHighPrice(){
     this.name = "Sắp theo giá: Cao -> Thấp";
@@ -111,6 +195,7 @@ export default {
   },
  
 },
+
 }
 
 
@@ -128,6 +213,8 @@ const getLaptop = async () => {
     console.log(error);
   }
 };
+
+
 
 </script>
   
