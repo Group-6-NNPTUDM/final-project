@@ -1,4 +1,5 @@
 <template>
+
   <div class="productdetail-page">
     <HeaderVue />
     <div class="body-block mt-5">
@@ -129,3 +130,4 @@ const getProductInfomation = async (id) => {
   margin-top: 10px;
 }
 </style>
+

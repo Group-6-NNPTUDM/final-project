@@ -11,7 +11,7 @@
 </template>
 
 <script>
-
+import "@/assets/css/product/style.css"
 export default {
   props: {
     data : []
