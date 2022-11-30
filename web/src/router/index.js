@@ -28,7 +28,8 @@ const routes = [
   {
     path:'/san-pham/:id',
     component: () => import('../views/ProductView.vue')
-  },
+  }
+  ,
   {
     path: '/danh-muc-san-pham/:category',
     component: () => import('../views/ProductsView.vue')
