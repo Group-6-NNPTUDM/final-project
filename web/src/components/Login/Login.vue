@@ -16,13 +16,13 @@
               <label for="password" class="form-label">Mật khẩu (Password)</label>
               <input type="password" class="form-control" id="password" required="true">
             </div>
-            
+
             <button type="submit" class="btn btn-primary">Đăng Nhập</button>
           </form>
         </div>
 
         <div class="col-3"></div>
-        
+
       </div>
     </div>
   </div>
@@ -30,12 +30,12 @@
 
 <!-- This place for js -->
 <script>
-    export default {
-        name: 'Login',
-        components: {
+export default {
+  name: 'Login',
+  components: {
 
-        }
-    }
+  }
+}
 </script>
 
 <!-- This place for css -->

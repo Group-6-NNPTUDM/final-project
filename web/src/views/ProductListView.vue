@@ -27,36 +27,61 @@
                 <div class="col-10 bg-primary">
                     <div class="row category-title">Mac Store</div>
 
-                    <div class="col-md-4">
-                        <!-- 1 product -->
-                        <div class="card-group">
-                            <div class="my-flex" style="padding-top:20px" v-for="product in products" :key="product.id">
-                                <div class="card">
-                                    <img class="card-img-top" :src="product.img" alt="Card image cap" />
-                                    <div class="card-body">
-                                        <h6 class="card-title">{{ product.title }}</h6>
-                                        <p class="card-text">
-                                            <small class="text-muted">{{ product.price.toLocaleString('it-IT', {
-                                                    style: 'currency',
-                                                    currency: 'VND'
-                                                })
-                                            }}</small>
-                                        </p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-">
+                            <!-- 1 product -->
+
+
+                            <!-- test col (xóa test bật cái dưới lên sài lại)-->
+                            <v-container class="grey lighten-5">
+                                <v-row no-gutters>
+                                    <v-col order="last">
+                                        <v-card class="col-md-6" outlined tile>
+                                            <div class="my-flex" style="padding-top:10px" v-for="product in products"
+                                                :key="product.id">
+                                                <div class="card">
+                                                    <img class="card-img-top" :src="product.img" alt="Card image cap" />
+                                                    <div class="card-body">
+                                                        <h6 class="card-title">{{ product.title }}</h6>
+                                                        <p class="card-text">
+                                                            <small class="text-muted">{{
+                                                                    product.price.toLocaleString('it-IT', {
+                                                                        style: 'currency',
+                                                                        currency: 'VND'
+                                                                    })
+                                                            }}</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </v-card>
+                                    </v-col>
+                                </v-row>
+                            </v-container>
+                            <!-- end test -->
+
+
+
+                            <!-- <div class="card-group">
+                                <div class="my-flex" style="padding-top:10px" v-for="product in products"
+                                    :key="product.id">
+                                    <div class="card">
+                                        <img class="card-img-top" :src="product.img" alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h6 class="card-title">{{ product.title }}</h6>
+                                            <p class="card-text">
+                                                <small class="text-muted">{{ product.price.toLocaleString('it-IT', {
+                                                        style: 'currency',
+                                                        currency: 'VND'
+                                                    })
+                                                }}</small>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-
                     </div>
-
-
-
-
-                    <!-- <p v-for="product in products" :key="product.id">
-                            {{ product.title }} - {{ product.price }}
-                        </p> -->
-
-
 
 
 
