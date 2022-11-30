@@ -30,6 +30,15 @@ const routes = [
     component: () => import('../views/ProductView.vue')
   },
   {
+    path: '/danh-muc-san-pham',
+    component: () => import('../views/ProductListView.vue')
+  }
+  
+  
+  
+  
+  ,
+  {
     path: '/danh-muc-san-pham/:category',
     component: () => import('../views/ProductsView.vue')
   }
