@@ -124,15 +124,13 @@ export default {
     Header,
     Footer,
     ProductDetail,
-  }
+  },
 
-
+}
 const getItemsByCategory = async (type) => {
   const res = await axios.get(`${Url.URL}products?categories=${type}&_sort=price&_order=desc&_limit=4`)
     .then((res) => res.data)
     .catch((err) => console.log(err));
-
-
   return res;
 }
 
