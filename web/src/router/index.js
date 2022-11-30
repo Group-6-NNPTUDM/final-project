@@ -16,16 +16,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/san-pham',
 
-    component: () => import('../views/ProductView.vue')
-  },
-  {
-    path: '/san-pham/:title',
-    name: 'san-pham-category',
-    component: () => import('../views/ProductView.vue')
-  },
-  {
     path: '/dang-ky',
     name: 'dang-ky',
     component: () => import('../views/RegisterView.vue')
@@ -34,6 +25,16 @@ const routes = [
     path: '/dang-nhap',
     name: 'dang-nhap',
     component: () => import('../views/LoginView.vue')
+
+  },
+  {
+    path:'/san-pham/:id',
+    component: () => import('../views/ProductView.vue')
+  },
+  {
+    path: '/danh-muc-san-pham/:category',
+    component: () => import('../views/ProductsView.vue')
+
   }
 
 

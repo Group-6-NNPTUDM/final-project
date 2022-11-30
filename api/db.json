@@ -1,6 +1,11 @@
 {
     "categories" : [
         {
+            "id" : "5544d660-7075-45d1-8f8a-f287fc4c2648",
+            "title" : "Lenovo",
+            "series" : [
+                "ThinkPad L - E series",
+}{
             
             "id" : "",
             "title" : "All",
@@ -12,7 +17,8 @@
             "id" : "5544d660-7075-45d1-8f8a-f287fc4c2648",
             "title" : "Lenovo",
             "series" : [
-                "ThinkPad L - E series hehe",
+                "ThinkPad L - E series",
+
                 "ThinkPad T series",
                 "ThinkPad X1 Carbon"
             ]
@@ -41,12 +47,17 @@
             "id" : "c6d9c73d-09dc-408d-8ac6-3f22c0e4be76",
             "title" : "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
             "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-            "price" : 50500000,
+
+            "price" : 30500000,
+
             "salePrice" : null,
             "isNew" : true,
             "isDeleted" : false,
             "categories" : "Lenovo",
-            "quantity" : 4
+
+            "quantity" : 4,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id" : "a779c179-db28-4405-8700-5bea9b7fd7bb",
@@ -57,18 +68,26 @@
             "isDeleted" : false,
             "isNew" : true,
             "categories" : "Lenovo",
-            "quantity" : 4
+
+            "quantity" : 4,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id" : "14a21e97-5036-4ee2-ad49-8664cab7fa59",
             "title" : "ThinkPad X1 Carbon Gen 8 FHD - Quad Core I5 10210U / RAM 16GB / 256GB / New 99%",
             "img" : "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-            "price" : 30500000,
+
+            "price" : 50500000,
+
             "salePrice" : null,
             "isDeleted" : false,
             "isNew" : true,
             "categories" : "Lenovo",
-            "quantity" : 4
+
+            "quantity" : 4,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id" : "4090f608-854d-44b4-ba82-378dba747911",
@@ -77,9 +96,12 @@
             "price" : 10500000,
             "salePrice" : null,
             "isDeleted" : false,
-            "isNew" : true,
+
+            "isNew" : false,
             "categories" : "Lenovo",
-            "quantity" : 4
+            "quantity" : 0,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id" : "53d4f03a-bfce-4039-9a27-5937f707c5c2",
@@ -90,7 +112,10 @@
             "isDeleted" : false,
             "isNew" : true,
             "categories" : "Lenovo",
-            "quantity" : 4
+
+            "quantity" : 4,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         }, 
         {
             "id": "a11a9130-a200-492e-85af-098f1ac9c594", 
@@ -100,7 +125,10 @@
             "salePrice" : null,
             "isNew" : true,
             "categories" : "Apple",
-            "quantity" : 3
+
+            "quantity" : 3,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id": "77e8563f-ea1d-4250-898b-7b5ba9dce5fb", 
@@ -110,7 +138,10 @@
             "salePrice" : null,
             "isNew" : true,
             "categories" : "Apple",
-            "quantity" : 3
+
+            "quantity" : 3,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id": "9ce01bf0-07ab-4975-b5da-566bb4a5dfd8", 
@@ -120,7 +151,10 @@
             "salePrice" : null,
             "isNew" : true,
             "categories" : "Apple",
-            "quantity" : 3
+
+            "quantity" : 3,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id": "2ccd26f6-8861-44aa-9f27-42fc57e7f41f", 
@@ -130,7 +164,10 @@
             "salePrice" : null,
             "isNew" : true,
             "categories" : "Apple",
-            "quantity" : 3
+
+            "quantity" : 3,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id": "bf146594-e4e1-4661-a5ed-1cfbaf3c4a00", 
@@ -140,7 +177,10 @@
             "salePrice" : null,
             "isNew" : true,
             "categories" : "Dell",
-            "quantity" : 3
+
+            "quantity" : 3,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id": "4db2e503-ec5c-4e6d-ba4d-9a08bdd975c8", 
@@ -150,7 +190,10 @@
             "salePrice" : null,
             "isNew" : true,
             "categories" : "Dell",
-            "quantity" : 3
+
+            "quantity" : 3,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id": "42be6bc1-285f-468b-8dca-0ab9b5eb1a3b", 
@@ -160,7 +203,10 @@
             "salePrice" : null,
             "isNew" : true,
             "categories" : "Dell",
-            "quantity" : 3
+
+            "quantity" : 3,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id": "d4042008-e782-45fb-828e-5dfc441f9f9a", 
@@ -170,7 +216,10 @@
             "salePrice" : null,
             "isNew" : true,
             "categories" : "Dell",
-            "quantity" : 3
+
+            "quantity" : 3,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         },
         {
             "id": "5bea0a69-6345-4f7b-b70c-8a11cbbc5a94", 
@@ -180,7 +229,10 @@
             "salePrice" : null,
             "isNew" : true,
             "categories" : "Dell",
-            "quantity" : 3
+
+            "quantity" : 3,
+            "description" : "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+
         }
     ],
     "cpu" : [

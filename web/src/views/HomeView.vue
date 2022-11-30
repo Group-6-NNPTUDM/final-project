@@ -118,9 +118,6 @@ export default {
     this.products.apple = await getItemsByCategory(CategoriesType.MAC);
     this.products.dell = await getItemsByCategory(CategoriesType.DELL);
 
-    console.log(this.products.apple, "Apple")
-    console.log(this.products.lenovo, "Lenovo")
-    console.log(this.products.dell, "dell")
   },
   name: 'Home',
   components: {
@@ -129,12 +126,12 @@ export default {
     ProductDetail,
   }
 
-}
 
 const getItemsByCategory = async (type) => {
   const res = await axios.get(`${Url.URL}products?categories=${type}&_sort=price&_order=desc&_limit=4`)
     .then((res) => res.data)
     .catch((err) => console.log(err));
+
 
   return res;
 }
