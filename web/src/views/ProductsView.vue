@@ -99,6 +99,7 @@ import HeaderVue from '@/components/Header/Header.vue';
 import FooterVue from '@/components/Footer/Footer.vue';
 import axios from 'axios';
 import CommonConstant from '@/constants/commonConstant';
+//import { throwStatement } from "@babel/types";
 
 
 console.log(CommonConstant);
@@ -106,6 +107,7 @@ console.log(CommonConstant);
 export default {
     data() {
         return {
+            state : [],
             categories:[],
             products: [],
             totalCount: 0,
@@ -131,19 +133,20 @@ export default {
     },
     methods: {
       async handlePaginationBtnClick(pageIndex) {
-        const res = await getProducts(pageIndex, this.limitItems, this.sortByDefault, this.orderByDefault);
+        const res = await getProducts(this.state,pageIndex, this.limitItems, this.sortByDefault, this.orderByDefault);
         this.products = res.products
       },
       async handleSortBtnClick(sortType, orderType) {
-        const res = await getProducts(this.defaultPage, this.limitItems, sortType, orderType);
+        const res = await getProducts(this.state,this.defaultPage, this.limitItems, sortType, orderType);
         this.sortByDefault = sortType;
         this.orderByDefault = orderType;
         this.products = res.products;
       },
-      async listProductsByCategory(title) {
-        const res = await productsByCategory(title,this.defaultPage, this.limitItems, this.sortByDefault, this.orderByDefault);
+      async listProductsByCategory(title){
+        const res = await getProducts(title,this.defaultPage, this.limitItems, this.sortType, this.orderType);
+        this.state = title;
         this.products = res.products;
-      },
+      }
     },
     components: {
         HeaderVue,
@@ -151,12 +154,12 @@ export default {
     }
 }
 
-const getProducts = async (page, limit = 1, sortType = CommonConstant.SORT_BY_TITLE, orderType = CommonConstant.ORDER_ASC) => {
+const getProducts = async (state,page, limit = 1, sortType = CommonConstant.SORT_BY_TITLE, orderType = CommonConstant.ORDER_ASC) => {
   const totalCount = await axios.get('http://localhost:8000/api/products')
     .then((res) => res.data.length)
     .catch((err) => console.log(err))
 
-  const products = await axios.get(`http://localhost:8000/api/products?_page=${page}&_limit=${limit}&_sort=${sortType}&_order=${orderType}`)
+  const products = await axios.get(`http://localhost:8000/api/products?categories=${state}&_page=${page}&_limit=${limit}&_sort=${sortType}&_order=${orderType}`)
     .then((res) => res.data)
     .catch((err) => console.log(err)) 
 
@@ -175,12 +178,6 @@ const getCategories = async()=>{
       categories: getCategory
     }
 }
-const productsByCategory = async (type, page, limit = 1, sortType = CommonConstant.SORT_BY_TITLE, orderType = CommonConstant.ORDER_ASC)=>{
-  const list = await axios.get(`http://localhost:8000/api/products?categories=${type}&_page=${page}&_limit=${limit}&_sort=${sortType}&_order=${orderType}`)
-  .then((res) => res.data)
-  return{
-    products : list
-  }
-}
+
 
 </script>
