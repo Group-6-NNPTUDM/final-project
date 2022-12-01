@@ -44,7 +44,31 @@
           </div>
           </ul>
           </div>
-
+          <div class="categories-sort">
+            <h6 class="categories-menu-title">Lọc tìm sản phẩm</h6>
+            <h6 class="categories-menu-title">LCD</h6>
+            <ul class="item-sort"> 
+            <li>
+              <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                8.2 inch
+              </label>
+            </div>
+            </li>
+            </ul>
+            <h6 class="categories-menu-title">Kết nối</h6>
+            <ul class="item-sort"> 
+            <li>
+              <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                WIFI
+              </label>
+            </div>
+            </li>
+            </ul>
+        </div>
         </div>
         <div class="col-10 bg-primary">
           <div class="row category-title">Mac Store</div>
@@ -103,6 +127,7 @@ export default {
 
       this.categories = responseCategory.categories;
       
+      
     },
     methods: {
       async handlePaginationBtnClick(pageIndex) {
@@ -117,7 +142,6 @@ export default {
       },
       async listProductsByCategory(title) {
         const res = await productsByCategory(title,this.defaultPage, this.limitItems, this.sortByDefault, this.orderByDefault);
-
         this.products = res.products;
       },
     },
