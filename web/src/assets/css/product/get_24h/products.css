@@ -1,0 +1,33 @@
+.categories-menu{
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid gray;
+}
+
+.categories-menu-title{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: gray;
+}
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+  }
+  .categories-sort{
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px 0px 15px 15px;
+    border: 1px solid gray;
+  }
+  .item-sort {
+    font-size: 12px;
+  }
+  li{
+    padding-top: 10px;
+}
+label{
+  cursor: pointer;
+}

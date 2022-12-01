@@ -1,18 +1,6 @@
 {
     "categories" : [
         {
-            "id" : "5544d660-7075-45d1-8f8a-f287fc4c2648",
-            "title" : "Lenovo",
-            "series" : [
-                "ThinkPad L - E series"]
-},{
-            
-            "id" : "",
-            "title" : "All",
-            "series" : [
-            ]
-        },
-        {
             
             "id" : "5544d660-7075-45d1-8f8a-f287fc4c2648",
             "title" : "Lenovo",
