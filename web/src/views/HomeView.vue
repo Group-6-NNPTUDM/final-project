@@ -1,3 +1,46 @@
+<script>
+
+import axios from 'axios'
+import Header from '../components/Header/Header.vue'
+import Footer from '../components/Footer/Footer.vue'
+import ProductDetail from '../components/ProductDetail/ProductDetail.vue'
+import CategoriesType from '../constants/categoriesConstant'
+import Url from '../constants/urlConstant'
+
+export default {
+  data() {
+    return {
+      products : {
+        lenovo: [],
+        apple: [],
+        dell: []
+      }
+    }
+  },
+  async mounted() {
+    this.products.lenovo = await getItemsByCategory(CategoriesType.LENOVO);
+    this.products.apple = await getItemsByCategory(CategoriesType.MAC);
+    this.products.dell = await getItemsByCategory(CategoriesType.DELL);
+
+  },
+  name: 'Home',
+  components: {
+    Header,
+    Footer,
+    ProductDetail,
+  }
+}
+
+const getItemsByCategory = async (type) => {
+  const res = await axios.get(`${Url.URL}products?categories=${type}&_sort=price&_order=desc&_limit=4`)
+    .then((res) => res.data)
+    .catch((err) => console.log(err));
+
+
+  return res;
+}
+</script>
+
 <template>
   <div class="home-page">
     <Header class="header-block"></Header>
@@ -89,54 +132,6 @@
     <Footer class="footer-block mt-5"></Footer>
   </div>
 </template>
-
-<script>
-
-// Import third lib
-import axios from 'axios'
-
-// Import Component
-import Header from '../components/Header/Header.vue'
-import Footer from '../components/Footer/Footer.vue'
-import ProductDetail from '../components/ProductDetail/ProductDetail.vue'
-import CategoriesType from '../constants/categoriesConstant'
-import Url from '../constants/urlConstant'
-
-
-export default {
-  data() {
-    return {
-      products : {
-        lenovo: [],
-        apple: [],
-        dell: []
-      }
-    }
-  },
-  async mounted() {
-    this.products.lenovo = await getItemsByCategory(CategoriesType.LENOVO);
-    this.products.apple = await getItemsByCategory(CategoriesType.MAC);
-    this.products.dell = await getItemsByCategory(CategoriesType.DELL);
-
-  },
-  name: 'Home',
-  components: {
-    Header,
-    Footer,
-    ProductDetail,
-  }
-
-
-const getItemsByCategory = async (type) => {
-  const res = await axios.get(`${Url.URL}products?categories=${type}&_sort=price&_order=desc&_limit=4`)
-    .then((res) => res.data)
-    .catch((err) => console.log(err));
-
-
-  return res;
-}
-
-</script>
 
 <style>
 .body-block {

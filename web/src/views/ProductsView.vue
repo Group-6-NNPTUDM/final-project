@@ -1,3 +1,70 @@
+<script>
+import HeaderVue from '@/components/Header/Header.vue';
+import FooterVue from '@/components/Footer/Footer.vue';
+import axios from 'axios';
+import CommonConstant from '@/constants/commonConstant';
+
+export default {
+    data() {
+        return {
+            products: [],
+            totalCount: 0,
+            limitItems: 4,
+            defaultPage: 1,
+            numberOfPaginateBtn : 0,
+            sortByDefault : CommonConstant.SORT_BY_TITLE,
+            orderByDefault : CommonConstant.ORDER_ASC,
+        }
+    },
+    async mounted() {
+      const categoryType = this.$route.params.category;
+      const response = await getProducts(this.defaultPage, this.limitItems, categoryType);
+      console.log(response.totalCount / this.limitItems)
+
+      this.type = categoryType
+      this.products = response.products;
+      this.totalCount = response.totalCount;
+      this.numberOfPaginateBtn = Math.ceil(response.totalCount / this.limitItems);
+    },
+    methods: {
+      async handlePaginationBtnClick(pageIndex) {
+        const res = await getProducts(pageIndex, this.limitItems, this.type, this.sortByDefault, this.orderByDefault);
+        this.products = res.products
+      },
+      async handleSortBtnClick(sortType, orderType) {
+        const res = await getProducts(this.defaultPage, this.limitItems, sortType, orderType);
+        this.sortByDefault = sortType;
+        this.orderByDefault = orderType;
+        this.products = res.products;
+      }
+    },
+    components: {
+        HeaderVue,
+        FooterVue,
+    }
+}
+
+const getProducts = async (page, limit = 1, type, sortType = CommonConstant.SORT_BY_TITLE, orderType = CommonConstant.ORDER_ASC) => {
+  const totalCountUrl = `http://localhost:8000/api/products?categories=${type}`;
+  const productsUrl = `http://localhost:8000/api/products?_page=${page}&_limit=${limit}&_sort=${sortType}&_order=${orderType}&categories=${type}`;
+  
+  const totalCount = await axios.get(totalCountUrl)
+    .then((res) => res.data.length)
+    .catch((err) => console.log(err))
+
+    console.log(totalCount, 'count');
+
+  const products = await axios.get(productsUrl)
+    .then((res) => res.data)
+    .catch((err) => console.log(err)) 
+
+  return {
+    products : products,
+    totalCount : totalCount
+  }
+}
+</script>
+
 <template>
   <div class="product-list-page">
     <HeaderVue />
@@ -42,66 +109,3 @@
     <FooterVue class="mt-5" />
   </div>
 </template>
-
-<script>
-
-import HeaderVue from '@/components/Header/Header.vue';
-import FooterVue from '@/components/Footer/Footer.vue';
-import axios from 'axios';
-import CommonConstant from '@/constants/commonConstant';
-
-console.log(CommonConstant);
-
-export default {
-    data() {
-        return {
-            products: [],
-            totalCount: 0,
-            limitItems: 4,
-            defaultPage: 1,
-            numberOfPaginateBtn : 0,
-            sortByDefault : CommonConstant.SORT_BY_TITLE,
-            orderByDefault : CommonConstant.ORDER_ASC,
-        }
-    },
-    async mounted() {
-      const response = await getProducts(this.defaultPage, this.limitItems);
-
-      this.products = response.products;
-      this.totalCount = response.totalCount;
-      this.numberOfPaginateBtn = Math.ceil(response.totalCount / this.limitItems);
-    },
-    methods: {
-      async handlePaginationBtnClick(pageIndex) {
-        const res = await getProducts(pageIndex, this.limitItems, this.sortByDefault, this.orderByDefault);
-        this.products = res.products
-      },
-      async handleSortBtnClick(sortType, orderType) {
-        const res = await getProducts(this.defaultPage, this.limitItems, sortType, orderType);
-        this.sortByDefault = sortType;
-        this.orderByDefault = orderType;
-        this.products = res.products;
-      }
-    },
-    components: {
-        HeaderVue,
-        FooterVue,
-    }
-}
-
-const getProducts = async (page, limit = 1, sortType = CommonConstant.SORT_BY_TITLE, orderType = CommonConstant.ORDER_ASC) => {
-  const totalCount = await axios.get('http://localhost:8000/api/products')
-    .then((res) => res.data.length)
-    .catch((err) => console.log(err))
-
-  const products = await axios.get(`http://localhost:8000/api/products?_page=${page}&_limit=${limit}&_sort=${sortType}&_order=${orderType}`)
-    .then((res) => res.data)
-    .catch((err) => console.log(err)) 
-
-  return {
-    products : products,
-    totalCount : totalCount
-  }
-}
-
-</script>
