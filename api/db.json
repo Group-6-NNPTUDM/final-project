@@ -1,4 +1,13 @@
 {
+  "users": [
+    {
+      "id": "b018b72a-c94b-46e4-9235-01a3efa4e392",
+      "email": "tamle.dev@gmail.com",
+      "password": "2412Vantam",
+      "isDeleted": false,
+      "loginCount": 0
+    }
+  ],
   "categories": [
     {
       "id": "5544d660-7075-45d1-8f8a-f287fc4c2648",

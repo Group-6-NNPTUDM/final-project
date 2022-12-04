@@ -34,6 +34,10 @@ const routes = [
     path: "/danh-muc-san-pham/:category",
     component: () => import("../views/ProductsView.vue"),
   },
+  {
+    path: "/dang-nhap",
+    component: () => import("../views/LoginView.vue"),
+  },
 ];
 
 const router = createRouter({
