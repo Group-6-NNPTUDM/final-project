@@ -33,6 +33,12 @@ export default {
         .get(loginUrl)
         .then((res) => {
           if (res.data.length > 0 && res.status === okStatus) {
+            localStorage.setItem("userLogged", JSON.stringify({
+              userEmail: res.data[0].email,
+              userId : res.data[0].id
+            }));
+            
+            this.$router.push("/");
             return true;
           }
           this.isLoginFirstTime = false;
