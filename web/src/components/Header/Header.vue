@@ -22,7 +22,8 @@ export default {
       <div class="col-2 top-logo">
         <div class="logo-container">
           <a href="http://localhost:8080/">
-            <img src="https://mac24h.vn/images/logos/42/logo-mac24h_zwyz-ad.png?t=1629384503" width="145px" height="46" alt="logo" />
+            <img src="https://mac24h.vn/images/logos/42/logo-mac24h_zwyz-ad.png?t=1629384503" width="145px" height="46"
+              alt="logo" />
           </a>
         </div>
       </div>
@@ -47,6 +48,9 @@ export default {
             </li>
             <li>
               <a href="#" class="nav-link text-white">Hỗ Trợ</a>
+            </li>
+            <li class="nav-item active">
+              <a href="http://localhost:8080/gio-hang" class="nav-link text-white">Giỏ hàng</a>
             </li>
           </ul>
         </div>

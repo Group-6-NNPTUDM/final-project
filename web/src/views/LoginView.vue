@@ -35,9 +35,9 @@ export default {
           if (res.data.length > 0 && res.status === okStatus) {
             localStorage.setItem("userLogged", JSON.stringify({
               userEmail: res.data[0].email,
-              userId : res.data[0].id
+              userId: res.data[0].id
             }));
-            
+
             this.$router.push("/");
             return true;
           }
@@ -75,7 +75,8 @@ export default {
             <form @click="login($event, 'login')">
               <div class="mb-3">
                 <label for="email" class="form-label">Tài khoản Email (Email Account)</label>
-                <input v-model="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" required="true" />
+                <input v-model="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                  required="true" />
                 <div id="emailHelp" class="form-text">
                   We'll never share your email with anyone else.
                 </div>

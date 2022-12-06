@@ -129,18 +129,19 @@ export default {
           <div class="categories-sort">
             <h6 class="fw-bold">Sắp xếp</h6>
             <button class="btn btn-primary btn-sm" @click="() => handleSortBtnClick('title', 'asc')">
-              Sếp theo tên : A -> Z</button><br />
+              Sếp theo tên: A -> Z</button><br />
             <button class="btn btn-primary btn-sm mt-2" @click="() => handleSortBtnClick('title', 'desc')">
-              Sếp theo tên : Z -> A</button><br />
+              Sếp theo tên: Z -> A</button><br />
             <button class="btn btn-primary btn-sm mt-2" @click="() => handleSortBtnClick('price', 'asc')">
-              Sếp theo giá : Thấp -> Cao</button><br />
+              Sếp theo giá: Thấp -> Cao</button><br />
             <button class="btn btn-primary btn-sm mt-2" @click="() => handleSortBtnClick('price', 'desc')">
-              Sếp theo tên : Cao -> Thấp</button><br />
+              Sếp theo tên: Cao -> Thấp</button><br />
           </div>
           <div class="productsfilter_modalyear mt-2">
             <h6 class="fw-bold">Model Year</h6>
             <div class="form-check" v-for="modelYear in dummyModelYear" v-bind:key="modelYear.id">
-              <input class="form-check-input" type="checkbox" value="" id="modelYear" @click="() => handleFilterByModelYear(modelYear)" />
+              <input class="form-check-input" type="checkbox" value="" id="modelYear"
+                @click="() => handleFilterByModelYear(modelYear)" />
               <label class="form-check-label fw-bold" for="flexCheckDefault">
                 {{ modelYear.year }}
               </label>

@@ -2,8 +2,8 @@
 export default {
   name: "Login",
   methods: {
-    login : function (e, message) {
-      if(e) {
+    login: function (e, message) {
+      if (e) {
         e.preventDefault();
       }
 
@@ -14,6 +14,7 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
 
 <template>
