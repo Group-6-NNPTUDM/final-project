@@ -31,7 +31,7 @@ export default {
           Đăng ký
         </button>
       </div>
-      <div class="col-6">1</div>
+      <div class="col-6">1 - In NavBar.vue</div>
     </div>
     <div class="row navbar-block" v-else>
       <div class="col-12">Đăng nhập thành công</div>
