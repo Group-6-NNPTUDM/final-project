@@ -1,11 +1,10 @@
 <script>
-import axios from "axios";
 import Header from "../components/Header/Header.vue";
 import Footer from "../components/Footer/Footer.vue";
 import ProductDetail from "../components/ProductDetail/ProductDetail.vue";
 import CategoriesType from "../constants/categoriesConstant";
-import Url from "../constants/urlConstant";
 import NavBarVue from "@/components/Navbar/NavBar.vue";
+import{ getItemsByCategory} from "@/services/productsService"
 
 export default {
   data() {
@@ -29,17 +28,6 @@ export default {
     ProductDetail,
     NavBarVue
   },
-};
-
-const getItemsByCategory = async (type) => {
-  const res = await axios
-    .get(
-      `${Url.URL}products?categories=${type}&_sort=price&_order=desc&_limit=4`
-    )
-    .then((res) => res.data)
-    .catch((err) => console.log(err));
-
-  return res;
 };
 </script>
 
