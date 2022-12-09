@@ -1,4 +1,5 @@
 <template>
+
   <div class="productdetail-page">
     <HeaderVue />
     <div class="body-block mt-5">
@@ -60,12 +61,13 @@
                   </span>
                 </div>
                 <div class="row">
-                  <button type="button" class="btn btn-success">
+                
+                    <button @click="addData" type="button" class="btn btn-success">
                     Thêm vào giỏ hàng
                   </button>
                 </div>
-              </div>
 
+            </div>
               <!-- Banner and Phone Number  -->
               <div class="col-6">
                 <div
@@ -114,7 +116,6 @@
 import HeaderVue from "@/components/Header/Header.vue";
 import FooterVue from "@/components/Footer/Footer.vue";
 import UrlConstant from "../constants/urlConstant";
-
 import "vue-inner-image-zoom/lib/vue-inner-image-zoom.css";
 import InnerImageZoom from "vue-inner-image-zoom";
 import axios from "axios";
@@ -122,6 +123,7 @@ import axios from "axios";
 export default {
   data() {
     return {
+      productCart: JSON.parse(localStorage.getItem("productCart")),
       product: {},
     };
   },
@@ -138,6 +140,22 @@ export default {
     FooterVue,
     "inner-image-zoom": InnerImageZoom,
   },
+  //Lỗi đoạn này 
+  methods: {
+      addData(){
+        const count=0;
+        if(this.productCart!=null){
+          if (this.productCart.findIndex(this.$route.params.id)){
+          this.productCart.count++;
+        }
+        }else console.log(this.productCart);
+        this.productCart.push(this.product);
+        localStorage.setItem("productCart",JSON.stringify({
+          productCart: this.productCart,
+          count: count+1
+        }))
+      }
+  }
 };
 
 const getProductInfomation = async (id) => {
