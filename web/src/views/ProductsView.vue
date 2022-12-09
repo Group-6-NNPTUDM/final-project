@@ -53,6 +53,8 @@ export default {
     this.products = response.products;
     this.totalCount = response.totalCount;
     this.updateNumberOfPaginate(response.totalCount, this.limitItems);
+
+    localStorage.setItem("categoryClick",categoryType);
   },
   methods: {
     buildUrlProductById: buildUrlProductById,

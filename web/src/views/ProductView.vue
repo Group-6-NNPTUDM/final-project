@@ -120,10 +120,11 @@ import "vue-inner-image-zoom/lib/vue-inner-image-zoom.css";
 import InnerImageZoom from "vue-inner-image-zoom";
 import axios from "axios";
 
+
 export default {
   data() {
     return {
-      productCart: JSON.parse(localStorage.getItem("productCart")),
+      productCart: [],
       product: {},
     };
   },
@@ -143,17 +144,23 @@ export default {
   //Lỗi đoạn này 
   methods: {
       addData(){
-        const count=0;
-        if(this.productCart!=null){
-          if (this.productCart.findIndex(this.$route.params.id)){
-          this.productCart.count++;
+        const list = JSON.parse(localStorage.getItem("productCart"));
+        if(list!=null){
+          this.productCart = list;
+          const index = this.productCart.findIndex(x=>x.id==this.product.id);
+          if (index!=-1){
+            
+            this.productCart[index].count ++;
+          }else{
+            this.product.count=1;
+            this.productCart.push(this.product);
+          }
+        }else{
+          this.product.count=1;
+          this.productCart.push(this.product);
         }
-        }else console.log(this.productCart);
-        this.productCart.push(this.product);
-        localStorage.setItem("productCart",JSON.stringify({
-          productCart: this.productCart,
-          count: count+1
-        }))
+        localStorage.setItem("productCart",JSON.stringify(this.productCart))
+        this.$router.push("/gio-hang/") ;
       }
   }
 };
