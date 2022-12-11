@@ -45,6 +45,10 @@ const routes = [
     path: "/gio-hang",
     component: () => import("../views/ProductsCartView.vue"),
   },
+  {
+    path: "/thanh-toan",
+    component: () => import("../views/PayView.vue"),
+  },
 ];
 
 const router = createRouter({
