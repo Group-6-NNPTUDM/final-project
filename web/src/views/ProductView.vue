@@ -1,4 +1,5 @@
 <template>
+
   <div class="productdetail-page">
     <HeaderVue />
     <div class="body-block mt-5">
@@ -60,12 +61,13 @@
                   </span>
                 </div>
                 <div class="row">
-                  <button type="button" class="btn btn-success">
+                
+                    <button @click="addData" type="button" class="btn btn-success">
                     Thêm vào giỏ hàng
                   </button>
                 </div>
-              </div>
 
+            </div>
               <!-- Banner and Phone Number  -->
               <div class="col-6">
                 <div
@@ -114,14 +116,15 @@
 import HeaderVue from "@/components/Header/Header.vue";
 import FooterVue from "@/components/Footer/Footer.vue";
 import UrlConstant from "../constants/urlConstant";
-
 import "vue-inner-image-zoom/lib/vue-inner-image-zoom.css";
 import InnerImageZoom from "vue-inner-image-zoom";
 import axios from "axios";
 
+
 export default {
   data() {
     return {
+      productCart: [],
       product: {},
     };
   },
@@ -138,6 +141,28 @@ export default {
     FooterVue,
     "inner-image-zoom": InnerImageZoom,
   },
+  //Lỗi đoạn này 
+  methods: {
+      addData(){
+        const list = JSON.parse(localStorage.getItem("productCart"));
+        if(list!=null){
+          this.productCart = list;
+          const index = this.productCart.findIndex(x=>x.id==this.product.id);
+          if (index!=-1){
+            
+            this.productCart[index].count ++;
+          }else{
+            this.product.count=1;
+            this.productCart.push(this.product);
+          }
+        }else{
+          this.product.count=1;
+          this.productCart.push(this.product);
+        }
+        localStorage.setItem("productCart",JSON.stringify(this.productCart))
+        this.$router.push("/gio-hang/") ;
+      }
+  }
 };
 
 const getProductInfomation = async (id) => {
