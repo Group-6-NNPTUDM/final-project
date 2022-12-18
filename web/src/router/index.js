@@ -51,6 +51,10 @@ const routes = [
     path: "/tim-kiem/:keyword",
     component: () => import("../views/SearchView.vue"),
   },
+  {
+    path: "/tim-kiem",
+    component: () => import("../views/SearchView.vue"),
+  },
 ];
 
 const router = createRouter({

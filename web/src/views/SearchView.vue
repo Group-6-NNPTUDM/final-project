@@ -2,34 +2,68 @@
 import Header from "../components/Header/Header.vue";
 import Footer from "../components/Footer/Footer.vue";
 import axios from "axios";
+import {buildUrlProductById} from '../services/productsService';
 
 export default {
   setup() {},
-  mounted() {
+  async mounted() {
     const keyword = this.$route.params.keyword;
-    this.getProductByKeyword(keyword);
+
+    console.log(keyword);
+    this.products = await this.getProductByKeyword(keyword);
+
+    console.log(this.products);
   },
   data() {
     return {
       keyword: "",
+      products : []
     };
   },
   methods: {
-    getProductByKeyword(keyword) {
-      console.log(keyword, "params nè");
+    async getProductByKeyword(keyword) {
+      const url = buildSearchUrl(keyword);
+
+      const response = await axios.get(url)
+        .then((response) => response.data)
+        .catch((err) => console.log(err));
+
+      console.log(response.length, 'response')
+      return response;
     },
+    buildUrlProductById : buildUrlProductById
   },
   components: {
     Header,
     Footer,
   },
 };
+
+function buildSearchUrl(keyword) {
+  const url = keyword === undefined ? "http://localhost:8000/api/products" : `http://localhost:8000/api/products?q=${keyword}`;
+
+  return url;
+}
 </script>
 
 <template>
   <div>
     <Header />
-    <div class="container bg-danger mt-5">1</div>
-    <Footer />
+    <div class="container mt-5">
+      Search Result
+      <div class="row">
+        <div class="col-3 mt-2" v-for="product in products" :key="product.id">
+          <div class="card" style="width: 18rem;">
+            <img :src="product.img" class="card-img-top" alt="#">
+            <div class="card-body">
+              <h5 class="card-title">{{product.title}}</h5>
+              <p class="card-text">{{product.price}}</p>
+              <a v-bind:href="buildUrlProductById(product.id)">see more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Footer class="mt-5" />
   </div>
 </template>

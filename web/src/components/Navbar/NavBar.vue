@@ -11,6 +11,11 @@ export default {
       this.isLogged = true;
     }
   },
+  methods: {
+    logout() {
+      localStorage.removeItem("userLogged");
+    }
+  }
 };
 </script>
 
@@ -33,8 +38,14 @@ export default {
       </div>
       <div class="col-6">1 - In NavBar.vue</div>
     </div>
-    <div class="row navbar-block" v-else>
-      <div class="col-12">Đăng nhập thành công</div>
+    <div class="row navbar-block mt-3" v-else>
+      <div class="col-2">Đăng nhập thành công</div>
+      <button type="button" class="btn btn-primary btn-sm col-2" @click="() => this.$router.push('/dang-nhap')">
+        Đăng xuất
+      </button>
+      <button type="button" class="btn btn-primary btn-sm col-2" @click="() => this.$router.push('/gio-hang')">
+        Giỏ Hàng
+      </button>
     </div>
   </div>
 </template>
