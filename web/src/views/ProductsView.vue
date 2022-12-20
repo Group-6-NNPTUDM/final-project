@@ -2,7 +2,10 @@
 import HeaderVue from "@/components/Header/Header.vue";
 import FooterVue from "@/components/Footer/Footer.vue";
 import CommonConstant from "@/constants/commonConstant";
-import { getProducts, buildUrlProductById } from "@/services/productsService";
+import { 
+getProducts, 
+buildUrlProductById } from "@/services/productsService";
+import NavBarVue from "@/components/Navbar/NavBar.vue";
 import {
   APPLE_DESC,
   DELL_DESC,
@@ -118,6 +121,7 @@ export default {
   components: {
     HeaderVue,
     FooterVue,
+    NavBarVue
   },
 };
 </script>
@@ -125,6 +129,7 @@ export default {
 <template>
   <div class="product-list-page">
     <HeaderVue />
+    <NavBarVue />
     <div class="container mt-5">
       <div class="row">
         <div class="col-2">
