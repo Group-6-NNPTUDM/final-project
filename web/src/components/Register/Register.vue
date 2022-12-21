@@ -37,12 +37,12 @@
 
  <!-- This place for js -->
 <script>
-    export default {
-        name: 'Register',
-        components: {
+export default {
+  name: 'Register',
+  components: {
 
-        }
-    }
+  }
+}
 </script>
 
 <!-- This place for css -->

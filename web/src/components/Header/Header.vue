@@ -22,7 +22,8 @@ export default {
       <div class="col-2 top-logo">
         <div class="logo-container">
           <a href="http://localhost:8080/">
-            <img src="https://mac24h.vn/images/logos/42/logo-mac24h_zwyz-ad.png?t=1629384503" width="145px" height="46" alt="logo" />
+            <img src="https://mac24h.vn/images/logos/42/logo-mac24h_zwyz-ad.png?t=1629384503" width="145px" height="46"
+              alt="logo" />
           </a>
         </div>
       </div>

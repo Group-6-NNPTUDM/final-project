@@ -9,45 +9,47 @@
                     <h4>Thanh toán</h4>
                     <hr />
                     <form>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="my-a-infor">Tên người nhận: </div>
-                            <input class="input-text" type="text" />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="my-a-infor">Tên người nhận: </div>
+                                <input class="input-text" type="text" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
+                        <div class="form-group">
 
-                        <div class="row">
-                            <div class="my-a-infor">Số điện thoại: </div>
-                            <input class="input-text" type="text" />
+                            <div class="row">
+                                <div class="my-a-infor">Số điện thoại: </div>
+                                <input class="input-text" type="text" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
+                        <div class="form-group">
 
-                        <div class="row">
-                            <div class="my-a-infor">Địa chỉ: </div>
-                            <input class="input-text" type="text"/>
+                            <div class="row">
+                                <div class="my-a-infor">Địa chỉ: </div>
+                                <input class="input-text" type="text" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
+                        <div class="form-group">
 
-                        <div class="row">
-                            <div class="my-a-infor">Email: </div>
-                            <input class="input-text"  type="text" style="margin-bottom:20px" />
+                            <div class="row">
+                                <div class="my-a-infor">Email: </div>
+                                <input class="input-text" type="text" style="margin-bottom:20px" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <div class="row">
-                            <input style="width:45%; margin: auto" type="submit" value="Thanh toán"
-                                class="btn btn-outline-success" @click.prevent="sendMail()" />
-                            <a class="btn btn-outline-danger" style="width:45%; margin: auto" href="/gio-hang/">Quay lại</a>
+                        <div class="form-group">
+                            <div class="row">
+                                <input style="width:45%; margin: auto" type="submit" value="Thanh toán"
+                                    class="btn btn-outline-success" @click.prevent="sendMail()" />
+
+                                <a class="btn btn-outline-danger" style="width:45%; margin: auto" href="/gio-hang/">Quay
+                                    lại</a>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
                 </div>
             </div>
             <div class="my-swapper col-sm-4">
@@ -87,7 +89,7 @@ export default {
             name: "",
             phone: "",
             address: "",
-            email:"",
+            email: "",
         }
 
     },
@@ -111,21 +113,24 @@ export default {
             var result = Number(res1) * Number(res2);
             return result.toLocaleString("it-IT", { style: "currency", currency: "VND" })
         },
-        sendMail(){
+        sendMail() {
             try {
                 emailjs.sendForm('service_2r78r6j', 'template_7q3vey3', {
-                to_name: this.name,
-                to_email: this.email,
-                message: this.message
-            }).then((result) => {
-            console.log('SUCCESS!', result.text);
-            }, (error) => {
-            console.log('FAILED...', error.text);
-            });
+                    to_name: this.name,
+                    to_email: this.email,
+                    message: this.message
+                }).then((result) => {
+                   
+                    console.log('SUCCESS!', result.text);
+                }, (error) => {
+                    console.log('FAILED...', error.text);
+                });
 
-            } catch(error) {
-                console.log({error})
+            } catch (error) {
+                console.log({ error })
             }
+
+
             // Reset form field
             this.name = ""
             this.email = ""
@@ -202,11 +207,8 @@ tr:nth-child(even) {
     margin-left: 30px;
 }
 
-.input-text{
+.input-text {
     width: 85%;
     margin: auto;
 }
-
-
-
 </style>
