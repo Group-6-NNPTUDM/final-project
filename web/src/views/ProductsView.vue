@@ -170,7 +170,7 @@ export default {
                 {{ product.title }}
                 <a v-bind:href="buildUrlProductById(product.id)">see more</a>
               </p>
-              <p>{{ product.price }}</p>
+              <p>{{ product.price.toLocaleString("it-IT", { style: "currency", currency: "VND" }) }}</p>
             </div>
           </div>
           <!-- Phân trang  -->
