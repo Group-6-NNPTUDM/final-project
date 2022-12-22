@@ -44,6 +44,9 @@
                             <div class="row">
                                 <input style="width:45%; margin: auto" type="submit" value="Thanh toán"
                                     class="btn btn-outline-success" @click.prevent="sendMail()" />
+                                <!-- <input style="width:45%; margin: auto" type="submit" value="Thanh toán"
+                                    class="btn btn-outline-success" @click="() => this.$router.push('/')" /> -->
+
 
                                 <a class="btn btn-outline-danger" style="width:45%; margin: auto" href="/gio-hang/">Quay
                                     lại</a>
@@ -61,15 +64,13 @@
                         <th>Tổng tiền</th>
                     </tr>
 
-
                     <tr v-for="product in ProductsCart" :key="(product.id)">
                         <td>{{ product.title }}</td>
                         <td>{{ product.count }}</td>
                         <td>{{ result(product.count, product.price) }}</td>
                     </tr>
-
-
                 </table>
+
                 <div style="margin-top: 15px"><b class="text-danger">Tổng tiền thanh toán: {{ total }}</b></div>
             </div>
         </div>
@@ -80,6 +81,7 @@
 import Header from "../components/Header/Header.vue";
 import Footer from "../components/Footer/Footer.vue";
 import emailjs from 'emailjs-com';
+
 
 export default {
     data() {
@@ -120,22 +122,38 @@ export default {
                     to_email: this.email,
                     message: this.message
                 }).then((result) => {
-                   
+
                     console.log('SUCCESS!', result.text);
+
                 }, (error) => {
                     console.log('FAILED...', error.text);
+
                 });
 
             } catch (error) {
                 console.log({ error })
-            }
+            }           
 
-
-            // Reset form field
             this.name = ""
             this.email = ""
             this.message = ""
+            this.deleteList();
+
+            //this.flush();
+
+            alert('Thanh toán thành công!!');
+            setTimeout(() => { this.$router.push('/') }, 1500);
+            
+            
         },
+        deleteList() {
+            localStorage.removeItem("productCart");
+            this.total = 0;
+            this.ProductsCart = [];
+        },
+        flush() {
+            this.ProductsCart.splice(0);
+        }
     }
 };
 const getList = async () => {

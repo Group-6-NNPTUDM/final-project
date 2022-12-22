@@ -73,7 +73,7 @@ export default {
     },
     deleteList() {
       localStorage.removeItem("productCart");
-      this.total = 0;
+      this.total = 0 + ' VND';
       this.ProductsCart = [];
     },
     updateList(id, number) {
