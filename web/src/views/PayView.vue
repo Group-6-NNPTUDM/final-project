@@ -82,6 +82,9 @@ import Header from "../components/Header/Header.vue";
 import Footer from "../components/Footer/Footer.vue";
 import emailjs from 'emailjs-com';
 
+import axios from "axios";
+
+
 
 export default {
     data() {
@@ -99,6 +102,8 @@ export default {
         const res = await getList();
         this.ProductsCart = res.ProductsCart;
         this.total = res.total;
+
+
     },
     computed: {
     },
@@ -122,40 +127,60 @@ export default {
                     to_email: this.email,
                     message: this.message
                 }).then((result) => {
-
                     console.log('SUCCESS!', result.text);
 
                 }, (error) => {
                     console.log('FAILED...', error.text);
-
                 });
-
             } catch (error) {
                 console.log({ error })
-            }           
+            }
 
             this.name = ""
             this.email = ""
             this.message = ""
-            this.deleteList();
 
-            //this.flush();
+            UpdateQuantityInJSON();
+            this.resetList();
+           
+
 
             alert('Thanh toán thành công!!');
             setTimeout(() => { this.$router.push('/') }, 1500);
-            
-            
         },
-        deleteList() {
+        resetList() {
             localStorage.removeItem("productCart");
             this.total = 0;
             this.ProductsCart = [];
         },
-        flush() {
-            this.ProductsCart.splice(0);
-        }
     }
 };
+//test update datab
+const UpdateQuantityInJSON = async () => {
+    const url = 'http://localhost:8000/api/products';
+    let productsJson = []
+
+    const ProductsCart = JSON.parse(localStorage.getItem("productCart"))
+
+    try {
+        await axios.get(url).then(res => productsJson = res.data).catch(err => console.log(err));
+
+        for (var i = 0; i < this.ProductsCart.length; i++) {
+            for (var k = 0; k < this.productsJson.length; k++) {
+                if (ProductsCart[i].id == productsJson[k].id) {
+                    // how to parse when count cart > quantity db?
+                    productsJson[k].quantity - ProductsCart[i].count;
+                }
+            }
+        }
+        return;
+    } catch (error) {
+        console.log(error);
+    }
+};
+//end
+
+
 const getList = async () => {
     const list = JSON.parse(localStorage.getItem("productCart"))
     const sum = list.reduce((acc, item) => acc + (Number(String(item.price).replace(/\D/g, "")) * item.count), 0);
