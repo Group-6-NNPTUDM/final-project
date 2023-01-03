@@ -7,9 +7,6 @@ export default {
 </script>
 
 <style>
-.menu-container {
-  margin-top: 20px;
-}
 
 .menu_block {
   background-color: #444444;

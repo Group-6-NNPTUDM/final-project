@@ -34,9 +34,9 @@ export default {
 <template>
   <div class="home-page">
     <Header class="header-block"></Header>
-    <NavBarVue class="mt-3" />
+    <NavBarVue />
     <div class="body-block">
-      <div class="container mt-5 panel">
+      <div class="container panel">
         <!-- Main Panel -->
         <div class="row">
           <img
