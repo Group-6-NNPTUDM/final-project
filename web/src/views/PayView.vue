@@ -76,12 +76,14 @@
 import Header from "../components/Header/Header.vue";
 import Footer from "../components/Footer/Footer.vue";
 import emailjs from 'emailjs-com';
+import axios from 'axios';
 
 export default {
     data() {
         return {
             ProductsCart: [],
             total: 0,
+            value:0,
             name: "",
             phone: "",
             address: "",
@@ -112,7 +114,7 @@ export default {
             var result = Number(res1) * Number(res2);
             return result.toLocaleString("it-IT", { style: "currency", currency: "VND" })
         },
-        sendEmail(){
+         sendEmail(){
             if(this.phone == '' || this.name == ''||this.email == ''||this.address == '') {
             alert("No value");
             return;
@@ -127,6 +129,16 @@ export default {
             } catch(error) {
                 console.log({error})
             }
+
+
+             this.ProductsCart.forEach((index)=>
+                {
+                    console.log(index);
+                    const change = index.quantity - index.count;
+                    this.changeData(index.id,change);
+                }
+            )
+
             // Reset form field
             localStorage.removeItem('productCart');
             this.name = ""
@@ -137,8 +149,20 @@ export default {
             alert('Mua hàng thành công!');
             this.$router.push(this.returnPage);
         },
+
+        async changeData(id,value){
+           try{
+            await axios.patch(`http://localhost:8000/api/products/${id}`,
+            {
+                quantity:value
+            });
+           }catch(error){
+                console.log(error)
+           }
+        }
     }
 };
+
 const getList = async () => {
     const list = JSON.parse(localStorage.getItem("productCart"))
     const sum = list.reduce((acc, item) => acc + (Number(String(item.price).replace(/\D/g, "")) * item.count), 0);
