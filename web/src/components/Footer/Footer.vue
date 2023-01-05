@@ -49,17 +49,19 @@
     <div class="container footer-address" style="height 20px">
       <div class="col-12">
         <p class="text-sm-start text-white">Copyright @ 2014 Mac24h.vn</p>
-        <p class="text-sm-start text-white">HCM - 306/39 Nguyễn Thị Minh Khai, P. 5, Q. 3, TP HCM - Hotline: 0919.011.011 - 0911.100.900 -(028)66.607.607</p>
-        <p class="text-sm-start text-white">HN: Số 2 Ngách 39 , Ngõ 178 Thái Hà , P. Trung Liệt, Q. Đống Đa, TP Hà Nội - Hotline: 0964.600.600 0888.760.770</p>
+        <p class="text-sm-start text-white">HCM - 306/39 Nguyễn Thị Minh Khai, P. 5, Q. 3, TP HCM - Hotline:
+          0919.011.011 - 0911.100.900 -(028)66.607.607</p>
+        <p class="text-sm-start text-white">HN: Số 2 Ngách 39 , Ngõ 178 Thái Hà , P. Trung Liệt, Q. Đống Đa, TP Hà Nội -
+          Hotline: 0964.600.600 0888.760.770</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-    export default {
-      name: "Footer"
-    }   
+export default {
+  name: "Footer"
+}   
 </script>
 
 <style>

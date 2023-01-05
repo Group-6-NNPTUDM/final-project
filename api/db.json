@@ -6,13 +6,31 @@
       "password": "2412Vantam",
       "isDeleted": false,
       "loginCount": 0
+    },
+    {
+      "id": "b2ea4b24-53fe-41fd-9b0e-d7108ea4ceda",
+      "email": "dasdas@gmail.com",
+      "password": "251200",
+      "isDeleted": false,
+      "loginCount": 0,
+      "createdAt": 1672846534570
+    },
+    {
+      "id": "ba689b09-da32-4939-b2d1-8f0e66067926",
+      "email": "facebookteopro@gmail.com",
+      "password": "251200",
+      "isDeleted": false,
+      "loginCount": 0,
+      "createdAt": 1672846609673
     }
   ],
   "categories": [
     {
       "id": "5544d660-7075-45d1-8f8a-f287fc4c2648",
       "title": "Lenovo",
-      "series": ["ThinkPad L - E series"]
+      "series": [
+        "ThinkPad L - E series"
+      ]
     },
     {
       "id": "",
@@ -41,7 +59,10 @@
     {
       "id": "5b497990-fdfd-4054-94e9-2807a8fe7d7c",
       "title": "Dell",
-      "series": ["Dell - XPS", "Dell - Gaming"]
+      "series": [
+        "Dell - XPS",
+        "Dell - Gaming"
+      ]
     }
   ],
   "products": [

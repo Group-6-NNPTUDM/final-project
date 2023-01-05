@@ -27,8 +27,9 @@ const routes = [
     component: () => import("../views/LoginView.vue"),
   },
   {
-    path: "/san-pham/:id",
-    component: () => import("../views/ProductView.vue"),
+
+    path: '/san-pham/:id',
+    component: () => import('../views/ProductView.vue')
   },
 
   {
