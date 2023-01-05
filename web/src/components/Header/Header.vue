@@ -2,7 +2,13 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      keyword: "",
+    };
+  },
   components: {},
+
   data() {
     return {
       isLogged: false,
@@ -22,6 +28,7 @@ export default {
       
     }
   }
+
 };
 </script>
 
@@ -82,7 +89,7 @@ export default {
             active-cyan-2
             mt-2
           ">
-          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search" />
+          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search" v-model="keyword" v-on:keydown.enter.prevent="searchKeyword()" />
           <i class="fas fa-search" aria-hidden="true"></i>
         </form>
       </div>
