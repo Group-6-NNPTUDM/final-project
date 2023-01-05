@@ -28,7 +28,6 @@ export default {
 
       const [email, password] = [this.email, this.password];
       const loginUrl = `http://localhost:8000/api/users?email=${email}&password=${password}`;
-
       this.isLogged = await axios
         .get(loginUrl)
         .then((res) => {

@@ -3,6 +3,25 @@
 export default {
   name: "Header",
   components: {},
+  data() {
+    return {
+      isLogged: false,
+    };
+  },
+  mounted() {
+    const user = localStorage.getItem("userLogged");
+    if (user !== null) {
+      this.isLogged = true;
+    }
+  },
+  methods:{
+    logout(){
+      alert("Đăng xuất thành công");
+      this.$router.push('/dang-nhap');
+      localStorage.removeItem('userLogged');
+      
+    }
+  }
 };
 </script>
 
@@ -45,6 +64,10 @@ export default {
             </li>
             <li>
               <a href="#" class="nav-link text-white">Hỗ Trợ</a>
+            </li>
+            
+            <li v-if="isLogged">
+              <a href="#" class="nav-link text-white" @click="logout">Đăng xuất</a>
             </li>
           </ul>
         </div>

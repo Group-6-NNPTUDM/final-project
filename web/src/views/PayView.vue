@@ -17,7 +17,7 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="my-a-infor">Số điện thoại: </div>
-                            <input class="input-text" name="to_sdt" type="text" v-model=" this.phone"/>
+                            <input class="input-text" name="to_sdt" type="text" v-model=" this.phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength=12/>
                         </div>
                     </div>
 
@@ -82,6 +82,7 @@ export default {
     data() {
         return {
             ProductsCart: [],
+            userLogged:[],
             total: 0,
             value:0,
             name: "",
@@ -98,6 +99,11 @@ export default {
         this.ProductsCart = res.ProductsCart;
         this.total = res.total;
         this.returnPage = "/danh-muc-san-pham/" + res.returnPage;
+        this.userLogged = res.userLogged;
+        if (this.userLogged===null){
+            alert("Yêu cầu đăng nhập")
+            this.$router.push('/dang-nhap/');
+        }
     },
     computed: {
     },
@@ -108,6 +114,7 @@ export default {
     },
 
     methods: {
+        
         result(num1, num2) {
             var res1 = String(num1).replace(/\D/g, "");
             var res2 = String(num2).replace(/\D/g, "");
@@ -116,8 +123,12 @@ export default {
         },
          sendEmail(){
             if(this.phone == '' || this.name == ''||this.email == ''||this.address == '') {
-            alert("No value");
+            alert("Yêu cầu nhập đầy đủ");
             return;
+            }
+            if (this.phone.length<10){
+                alert("Yêu cầu nhập đúng sdt")
+                return;
             }
 
             try {
@@ -167,12 +178,15 @@ const getList = async () => {
     const list = JSON.parse(localStorage.getItem("productCart"))
     const sum = list.reduce((acc, item) => acc + (Number(String(item.price).replace(/\D/g, "")) * item.count), 0);
     const returnPage = localStorage.getItem("categoryClick");
+    const listUser = JSON.parse(localStorage.getItem("userLogged"))
     return {
         ProductsCart: list,
         total: sum.toLocaleString("it-IT", { style: "currency", currency: "VND" }),
         returnPage: returnPage,
+        userLogged :listUser,
     }
 };
+
 </script>
 <style>
 table {
@@ -234,7 +248,4 @@ tr:nth-child(even) {
     width: 85%;
     margin: auto;
 }
-
-
-
 </style>

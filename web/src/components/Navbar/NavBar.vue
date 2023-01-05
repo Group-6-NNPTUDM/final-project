@@ -33,7 +33,6 @@ export default {
           Đăng ký
         </button>
       </div>
-
     </div>
     <div class="row navbar-block" v-else>
       <div class="col-12">Đăng nhập thành công</div>
