@@ -15,11 +15,6 @@ export default {
     }
   },
   methods:{
-    logout(){
-      alert("Đăng xuất thành công");
-      this.$router.push('/dang-nhap');
-      localStorage.removeItem('userLogged');
-    },
         searchKeyword() {
       const url = this.keyword !== "" ? `/tim-kiem/${this.keyword}` : "/tim-kiem";
       this.$router.push(url);
@@ -66,10 +61,6 @@ export default {
             </li>
             <li>
               <a href="#" class="nav-link text-white">Hỗ Trợ</a>
-            </li>
-
-            <li v-if="isLogged">
-              <a href="#" class="nav-link text-white" @click="logout">Đăng xuất</a>
             </li>
           </ul>
         </div>
