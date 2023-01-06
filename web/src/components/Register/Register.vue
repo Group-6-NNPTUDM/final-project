@@ -40,7 +40,6 @@
     export default {
         name: 'Register',
         components: {
-
         }
     }
 </script>

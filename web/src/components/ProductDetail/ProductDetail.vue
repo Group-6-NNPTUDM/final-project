@@ -2,7 +2,7 @@
   <div class="card-group">
     <div class="card" v-for="item in data" v-bind:key="item.index">
       <img class="card-img-top" v-bind:src="item.img" alt="Card image cap">
-      <div class="card-body">
+      <div class="card-body productDetail">
         <h6 class="card-title">{{item.title}}
           <a v-bind:href="`http://localhost:8080/san-pham/${item.id}`">see more</a>
         </h6>
@@ -26,5 +26,14 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+.productDetail {
+  padding: 10px;
+}
+
+.card-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 </style>

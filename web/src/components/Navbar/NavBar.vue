@@ -14,6 +14,8 @@ export default {
   methods: {
     logout() {
       localStorage.removeItem("userLogged");
+
+      this.$router.push('/dang-nhap')
     }
   }
 };
@@ -36,14 +38,17 @@ export default {
           Đăng ký
         </button>
       </div>
-      <div class="col-6">1 - In NavBar.vue</div>
     </div>
     <div class="row navbar-block mt-3" v-else>
-      <div class="col-2">Đăng nhập thành công</div>
-      <button type="button" class="btn btn-primary btn-sm col-2" @click="() => this.$router.push('/dang-nhap')">
+      <div class="col-8">
+        <p class="fw-bold">
+          Đăng nhập thành công
+        </p>
+      </div>
+      <button type="button" class="btn btn-outline-primary btn-sm col-2" @click="logout">
         Đăng xuất
       </button>
-      <button type="button" class="btn btn-primary btn-sm col-2" @click="() => this.$router.push('/gio-hang')">
+      <button type="button" class="btn btn-outline-primary btn-sm col-2" @click="() => this.$router.push('/gio-hang')">
         Giỏ Hàng
       </button>
     </div>
