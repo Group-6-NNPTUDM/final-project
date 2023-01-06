@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": "b018b72a-c94b-46e4-9235-01a3efa4e392",
+      "id": "fe6a65e9-f272-410c-a544-cc03f36b43d6",
       "email": "tamle.dev@gmail.com",
       "password": "2412Vantam",
       "isDeleted": false,
@@ -26,19 +26,39 @@
   ],
   "categories": [
     {
-      "id": "5544d660-7075-45d1-8f8a-f287fc4c2648",
+      "id": "f661b238-b48a-4aea-a4ce-35dfdb5e4fec",
       "title": "Lenovo",
       "series": [
         "ThinkPad L - E series"
       ]
     },
     {
-      "id": "",
-      "title": "All",
-      "series": []
+      "id": "cf3763e9-fcce-4745-818e-68c84c118312",
+      "title": "phụ kiện",
+      "series": ["Apple Accessories",
+                "Hub chuyển đổi",
+                "Bộ Sạc MegaSafe & Type C",
+                "Giá Đỡ Macbook , Laptop , iMac",
+                "Mice / Mouse Microsoft"
+                ]
     },
     {
-      "id": "5544d660-7075-45d1-8f8a-f287fc4c2648",
+      "id": "f3bacc31-6fcb-4e9c-9bae-16772f5d9913",
+      "title": "Iphone",
+      "series": ["Iphone 14 promax",
+                  "Iphone 14 pro",
+                  "Iphone 14 plus",
+                  "Iphone 14 ",
+                  "Iphone 13 promax",
+                  "Iphone 13 pro",
+                  "Iphone 13",
+                  "Iphone 12 promax",
+                  "Iphone 12 pro",
+                  "Iphone 12"
+    ]
+    },
+    {
+      "id": "44f775f1-daae-4c99-ad40-d442d2d8626a",
       "title": "Lenovo",
       "series": [
         "ThinkPad L - E series",
@@ -47,7 +67,7 @@
       ]
     },
     {
-      "id": "ede880a7-63df-4eac-b9de-149115fbb43a",
+      "id": "d46b6aa6-4b38-45da-931e-53e20e97274d",
       "title": "Apple",
       "series": [
         "iMac - Mac Pro",
@@ -57,145 +77,310 @@
       ]
     },
     {
-      "id": "5b497990-fdfd-4054-94e9-2807a8fe7d7c",
+      "id": "f223c2ab-2645-449b-b697-ed5af268a918",
       "title": "Dell",
-      "series": [
-        "Dell - XPS",
-        "Dell - Gaming"
-      ]
+      "series": ["Dell - XPS",
+                  "Dell precision",
+                  "Dell inspiron",
+                  "Dell latitude",
+                  "Dell - Gaming" 
+                ]
     }
-  ],
+    ],
   "products": [
     {
-      "id": "c6d9c73d-09dc-408d-8ac6-3f22c0e4be76",
-      "title": "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": 30500000,
-      "salePrice": null,
-      "isNew": true,
-      "isDeleted": false,
-      "categories": "lenovo",
-      "quantity": 4,
-      "modelYear": 2020,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
-    },
-    {
-      "id": "a779c179-db28-4405-8700-5bea9b7fd7bb",
-      "title": "ThinkPad E14 Gen 4 - 2022 - 14 inch FHD - Core I5 1235U 8GB 256GB SSD",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": 40500000,
+      "id": "73417929-0510-431b-82d4-78f5dd320707",
+      "title": "ThinkPad X1 Carbon Gen 9 4K HDR- Core i7 1165G7 32GB 512GB SSD",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad_X1_Carbon_Gen_9_tpcb-59_ipqo-6n_efhk-uj.png?t=1672435352",
+      "price": 31900000,
       "salePrice": null,
       "isDeleted": false,
       "isNew": true,
       "categories": "lenovo",
       "quantity": 4,
-      "modelYear": 2020,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "modelYear": 2021,
+      "description": "Processor : 11th Generation Intel® Core™ i7-1165G7 Processor with vPro™ (2.80 GHz, up to 4.70 GHz with Turbo Boost, 4 Cores, 8 Threads, 12 MB Cache) Memory: 32GB LPDDR4X 4267MHz (Soldered) State Drive: 512GB SSD M.2 PCIe Display: 14.0' (3840x2400) IPS Card: Integrated Intel® Iris® Xe Graphics Camera: Camera IR and 720p HD "
     },
     {
-      "id": "14a21e97-5036-4ee2-ad49-8664cab7fa59",
-      "title": "ThinkPad X1 Carbon Gen 8 FHD - Quad Core I5 10210U / RAM 16GB / 256GB / New 99%",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": 50500000,
+      "id": "71652e2c-93bd-48a9-9195-6e5363f299e6",
+      "title": "ThinkPad T14 Gen 3 14 inch FHD+ Core I7 1265U 16GB 512GB SSD",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/T14_GEN_3_Mac24h_v5cg-u7.png?t=1672407072",
+      "price": 25000000,
       "salePrice": null,
       "isDeleted": false,
       "isNew": true,
       "categories": "lenovo",
       "modelYear": 2021,
       "quantity": 4,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor : 12th Gen Intel Core i7-1265U (12MB Cache, 3.60GHZ up to 4.80GHz, 10 cores, 12 Threads) Graphics: Integrated Intel® Iris® Xe Graphics Memory: 16 GB DDR4 3200MHz Storage: 512 GB PCIe SSD Gen 4 Performance Display: 14.0' WUXGA (1920 x 1200) IPS Camera: 720p Option FHD 1080 "
     },
     {
-      "id": "4090f608-854d-44b4-ba82-378dba747911",
-      "title": "【New 99% 】 ThinkPad X1 Carbon Gen 8 - 4K HDR - Quad Core i7 10510U / RAM 16GB / 512GB",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": 10500000,
+      "id": "059798f7-ce7e-4a2d-8ed2-9e9b9e56cfcf",
+      "title": "ThinkPad T14 Gen 3 14 inch FHD Core I7 1260P 16GB 512GB SSD nVidia MX550 2GB",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/T14_GEN_3_Mac24h_v5cg-u7_2fqq-15.png?t=1672461027",
+      "price": 33900000 ,
+      "salePrice": null,
+      "isDeleted": false,
+      "isNew": true,
+      "categories": "lenovo",
+      "modelYear": 2021,
+      "quantity": 0,
+      "description": "Processor : 12th Generation Intel® Core™ i7-1260P Processor with vPro™ (E-Core Max 3.40 GHz, P-Core Max 4.70 GHz with Turbo Boost, 12 Cores, 16 Threads, 18 MB Cache) Graphics: Integrated Intel® Iris® Xe Graphics & Nvidia MX550 2GB Memory: 16 GB DDR4 3200MHz Storage: 512 GB PCIe SSD Gen 4 Performance Display: 14.0'' WUXGA (1920 x 1200) IPS Camera: 720p Option FHD 1080"
+    },
+    {
+      "id": "b753ec3e-ffcb-44d9-98ca-0c883d960ceb",
+      "title": " ThinkPad T14 Gen 3 14 inch FHD+ Core I7 1265U 16GB 512GB SSD",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad_T14_Gen_2_Mac24h_2y7k-dk_7flu-fh_mxhs-b9.png?t=1672439972",
+      "price": 15500000,
+      "salePrice": null,
+      "isDeleted": false,
+      "isNew": true,
+      "categories": "lenovo",
+      "modelYear": 2020,
+      "quantity": 4,
+      "description": "Processor : 12th Gen Intel Core i7-1265U (12MB Cache, 3.60GHZ up to 4.80GHz, 10 cores, 12 Threads) Graphics: Integrated Intel® Iris® Xe Graphics Memory: 16 GB DDR4 3200MHz Storage: 512 GB PCIe SSD Gen 4 Performance Display: 14.0'' WUXGA (1920 x 1200) IPS Camera: 720p Option FHD 1080"
+    },
+    {
+      "id": "c596d7fa-a023-4ec5-a0a6-40de6da840f9",
+      "title": " ThinkPad E14 Gen 2 - 14 inch FHD - Core I7 1165G7 16GB 512GB New 99%",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_d3jg-6l.png?t=1672412727",
+      "price": 15500000,
       "salePrice": null,
       "isDeleted": false,
       "isNew": false,
       "categories": "lenovo",
-      "modelYear": 2021,
-      "quantity": 0,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "modelYear": 2020,
+      "quantity": 4,
+      "description": "Processor :11th Generation Intel® Core™ i7-1165G7 Processor (2.8 GHz, up to 4.70 GHz with Turbo Boost, 4 Cores, 8 Threads, 12 MB Cache) Memory : 16 GB DDR4 3200MHz Solid State Drive : 512 GB M.2 2242 SSD Display : 14.0' FHD (1920x1080) IPS Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone"
     },
     {
-      "id": "53d4f03a-bfce-4039-9a27-5937f707c5c2",
-      "title": "ThinkPad E14 - 14 inch FHD - Core I5 10210U 8GB 256GB",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/ThinkPad-E14-g3_4el4-z4_psjr-le_14xg-a6_prps-ep.png?t=1660117134",
-      "price": 20500000,
+      "id": "2b260d84-3f7a-4150-8485-898037b55d62",
+      "title": "ThinkPad P1 Gen 3 15.6 inch 4K UHD - Core i7 10850H / RAM 32GB / SSD 512GB / Nvidia Quadro T1000 4GB - New 99%",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/X1_EXTREME__067z-s7_yi7a-k4_7qkq-it.png?t=1672443254",
+      "price": 15500000,
+      "salePrice": null,
+      "isDeleted": false,
+      "isNew": false,
+      "categories": "lenovo",
+      "modelYear": 2020,
+      "quantity": 4,
+      "description": "Processor :Intel Core i7-10850H Processor with vPro 2.30 GHz, upto 5.10 GHz 16 MB Cache RAM: 32GB DDR4 Đĩa cứng: 512GB SSD Màn hình : 15.6 Inch UHD (3840 x 2160) IPS Card đồ họa: NVIDIA Quadro T1000 4GB"
+    },
+    {
+      "id": "57a8b630-48fb-475f-a68a-7e40997eef04",
+      "title": "Worstation ThinkPad P15s Gen 2 - I7 1165G7 32GB 1TB SSD Nvidia T500 4GB 15.6 FHD",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/p15s_bmnd-ji_51e0-gz.png?t=1672414328",
+      "price": 27900000,
       "salePrice": null,
       "isDeleted": false,
       "isNew": true,
       "categories": "lenovo",
-      "modelYear": 2020,
       "quantity": 4,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "modelYear": 2021,
+      "description": "Processor : 11th Generation Intel® Core™ i7-1165G7 Processor (2.8 GHz, up to 4.70 GHz with Turbo Boost, 4 Cores, 8 Threads, 12 MB Cache) RAM: 32GB DDR4 3200MHz Đĩa cứng: 1TB M.2 PCIe NVMe Solid State Drive (M.2 SSD) LCD : 15.6' FHD (1920 x 1080) IPS, anti-glare, 300 nit Card đồ họa: NVIDIA® Quadro T500 4GB GDDR6 Trọng Lượng : 1.5kg "
     },
     {
-      "id": "a11a9130-a200-492e-85af-098f1ac9c594",
-      "title": "Apple Pro Display 1",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
-      "price": 119000000,
+      "id": "3323512b-d97d-4ad2-8a6b-2025f6b103e2",
+      "title": "Lenovo Ideapad Gaming 3 Ryzen 5-5600H, 8GB, 512GB, RTX 3050Ti, 15.6' FHD IPS 120Hz",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/F3C1B5BA-E7ED-4B4D-ACDC-44B5319C1DEB.png?t=1672408231",
+      "price": 16790000,
+      "salePrice": null,
+      "isDeleted": false,
+      "isNew": true,
+      "categories": "lenovo",
+      "quantity": 4,
+      "modelYear": 2021,
+      "description": "Processor : AMD Ryzen 5 5600H (6C / 12T, 3.3 / 4.2GHz, 3MB L2 / 16MB L3) 1x 8GB SO-DIMM DDR4-3200 512GB SSD M.2 2242 PCIe 3.0x4 NVMe NVIDIA GeForce RTX 3050 Ti 4GB GDDR6, Boost Clock 1485 15.6' FHD (1920x1080) IPS 250nits Anti-glare, 45% NTSC, 120Hz nhẹ 2.25KG "
+    },
+    {
+      "id": "1bc4348e-fb73-4df2-ba35-b5ee5026de6b",
+      "title": "Lenovo Ideapad 5 15 inch FHD- Core i7 10510U 16GB 512GB MX330 2GB",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/AC481B83-92DD-41CC-85C3-CF062D057BAC.png?t=1672412046",
+      "price": 10900000,
+      "salePrice": null,
+      "isDeleted": false,
+      "isNew": true,
+      "categories": "lenovo",
+      "quantity": 4,
+      "modelYear": 2020,
+      "description": "Processor : 10th Gen Intel® Core™ i7 10510U Processor (8MB Cache, up to 4.9GHz) RAM: 16GB DDR4 2666 MHz Đĩa cứng: 512GB M.2 PCIe NVMe Solid State Drive (M.2 SSD) Màn hình: 15' FHD (1920 x 1080), IPS, anti-glare, 250nits Card đồ họa: nVidia MX330M 2GB "
+    },
+    {
+      "id": "b7d729b1-ba20-4431-878c-312c16321cc6",
+      "title": "Macbook Pro 13 inch 2019 - Core I5 16GB 256GB SSD (MV962)",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Macbook_Pro_13_inch_2019_MV962_i5_8GB_25GB_New_Mac24h_mxn0-jm.png?t=1672410658",
+      "price": 18500000,
       "salePrice": null,
       "isNew": true,
       "categories": "apple",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor : 2.4GHz quad-core 8th-generation Intel Core i5 processor Turbo Boost up to 4.1GHz Intel Iris Plus Graphics 655 16GB 2133MHz LPDDR3 memory 256GB SSD storage1 Retina display with True Tone Touch Bar and Touch ID"
     },
     {
-      "id": "77e8563f-ea1d-4250-898b-7b5ba9dce5fb",
-      "title": "Apple Pro Display 2",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
-      "price": 119000000,
+      "id": "4191886a-f070-4e67-ad2c-28491822d9b2",
+      "title": "【New 98%】Macbook Pro 16 inch 2.3GHz 8-Core I9 32GB 1TB SSD Radeon Pro 5500M 8GB",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/40/Macbook_Pro_16_in_h7gr-jv.png?t=1672406963",
+      "price": 339000000,
+      "salePrice": null,
+      "isNew": false,
+      "categories": "apple",
+      "quantity": 3,
+      "description": "Processor : 2.4GHz 8-core 9th-generation Intel Core i9 processor Turbo Boost up to 5.0GHz AMD Radeon Pro 5500M with 8GB of GDDR6 memory 32GB 2666MHz DDR4 memory 1TB SSD storage¹ 16-inch Retina display with True ToneTouch Bar and Touch ID "
+    }, 
+    {
+      "id": "2cda15c5-23e7-4628-a26f-5392a2d2360a",
+      "title": "MLL42-Macbook Pro 2016 13 inch Core I7 2.4Ghz 16GB 256GB New 98%",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/MacBook%C2%A0Pro-13inch-2016-2017_005_8nr2-eq_zl6n-pj_qwqq-jm_ckil-sg_dv5b-i3.png?t=1672408494",
+      "price": 137000000,
+      "salePrice": null,
+      "isNew": false,
+      "categories": "apple",
+      "quantity": 3,
+      "description": "Processor :2.4GHz dual-core Intel Core i7 processor Turbo Boost up to 3.5GHz 16GB 1866MHz memory 256GB PCIe-based SSD1 Intel Iris Graphics 540 Two Thunderbolt 3 ports "
+    },
+    {
+      "id": "2e2a6e44-1df4-4c2e-a3a8-6ba00576809a",
+      "title": "Macbook Pro 13 inch 2020 Quad Core I7 2.3Ghz 32GB 2TB ",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/macbook-pro-2020_bgls-lb_zq26-fk_ecm2-10_qq1p-ar_muw2-mr.png?t=1672409566",
+      "price": 29500000,
       "salePrice": null,
       "isNew": true,
       "categories": "apple",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor :2.3GHz quad-core 10th-generation Intel Core i7 processor Turbo Boost up to 4.1GHz Intel Iris Plus Graphics 32GB 3733MHz LPDDR4X memory 2TB SSD storage¹ 13-inch Retina display with True Tone Magic Keyboard Touch Bar and Touch ID"
     },
     {
-      "id": "9ce01bf0-07ab-4975-b5da-566bb4a5dfd8",
-      "title": "Apple Pro Display 3",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
+      "id": "510b243f-d52f-47c9-9c63-baebc7db1802",
+      "title": "【CTO】 Macbook Pro 13 inch 2020 - Apple M1 8-Core CPU / 16GB / 2TB SSD New 99%",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Macbook_Pro_M1_2021_xoi3-wt_pwum-47_bsr4-8f.png?t=1672407784",
       "price": 119000000,
+      "salePrice": null,
+      "isNew": false,
+      "categories": "apple",
+      "quantity": 3,
+      "description": "Processor : Apple M1 chip with 8-core CPU, 8-core GPU, and 16-core Neural Engine 16GB unified memory 1TB SSD storage¹ 13-inch Retina display with True Tone Magic Keyboard Touch Bar and Touch ID Force Touch trackpad Two Thunderbolt / USB 4 ports"
+    },
+    {
+      "id": "d3ab957a-59af-4bf4-acf9-7ea753d492c7",
+      "title": "Custom-Macbook Pro 16 inch 2021 【Apple M1 Pro 10-core CPU, 16-core GPU】16GB 512GB [New 99%]",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Macbook_Pro_16_inch_mac24_pmc8-zo.png?t=1672407515",
+      "price": 34500000,
+      "salePrice": null,
+      "isNew": false,
+      "categories": "apple",
+      "quantity": 3,
+      "description": "Processor : Apple M1 Pro with 10-core CPU, 16-core GPU, 16-core Neural Engine 16GB unified memory 512GB SSD storage 16-inch Liquid Retina XDR display Three Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port 140W USB-C Power Adapter Backlit Magic Keyboard with Touch ID - US English Accessory Kit "
+    },
+    {
+      "id": "e9cb0738-6719-42c4-96f7-7044a5dfef44",
+      "title": "【New 98%】Macbook Pro 16 inch 2.3GHz 8-Core I9 64GB 512GB SSD Radeon Pro 5500M 4GB",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/40/Macbook_Pro_16_in_h7gr-jv.png?t=1672406963",
+      "price": 33900000,
       "salePrice": null,
       "isNew": true,
       "categories": "apple",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor :2.4GHz 8-core 9th-generation Intel Core i9 processor Turbo Boost up to 5.0GHz AMD Radeon Pro 5500M with 4GB of GDDR6 memory 64GB 2666MHz DDR4 memor 512GB SSD storage¹ 16-inch Retina display with True Tone Touch Bar and Touch ID Four Thunderbolt 3 ports"
     },
     {
-      "id": "2ccd26f6-8861-44aa-9f27-42fc57e7f41f",
-      "title": "Apple Pro Display 4",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
-      "price": 119000000,
+
+      "id": "451876ab-0340-47f2-9658-c8afb88839da",
+      "title": "Macbook Air 2020 13 inch Core I5 8GB 256GB ( Z0YJ0 - CTO ) New 99%",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/48/macbook_air_2020_mwtj2_space_gray.png?t=1672419199",
+      "price": 22900000 ,
+      "salePrice": null,
+      "isNew": false,
+      "categories": "apple",
+      "quantity": 3,
+      "description": "Processor :1.1GHz quad-core 10th-generation Intel Core i5 processor Turbo Boost up to 3.5GHz Intel Iris Plus Graphics & Retina display with True Tone 8GB 3733MHz LPDDR4X memory 256GB SSD storage¹ Magic Keyboard Touch ID"
+    },
+    {
+      "id": "1956bc0f-0e12-47ce-80cc-a6ce6df1c492",
+      "title": "Macbook Air M2 2022 13.6 inch Apple M2 16GB 256GB",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/macbook_air_m2_mac24h_kk1q-m7.png?t=1672407161",
+      "price": 31500000,
       "salePrice": null,
       "isNew": true,
       "categories": "apple",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor :8-Core CPU 8-Core GPU 16GB Unified Memory 256GB SSD Storage¹ 16-core Neural Engine 13.6-inch Liquid Retina display with True Tone 1080p FaceTime HD camera MagSafe 3 charging port Two Thunderbolt / USB 4 ports Magic Keyboard with Touch ID"
     },
     {
-      "id": "e3cfe8c7-e3f0-458a-8763-f9e87596e73e",
-      "title": "Apple Pro Display 5",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
-      "price": 119000000,
+      "id": "ddab0bab-598d-4120-b2ca-75628a1f9a42",
+      "title": "iMac 21.5 inch 2017 - MMQA2 - Core i5 2.3GHz/ 8GB/ HDD 1TB New 99%",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/31/Screen_Shot_2017-06-12_at_12_1tic-0f.39.45_PM.png?t=1672420193",
+      "price": 13900000,
       "salePrice": null,
-      "isNew": true,
+      "isNew": false,
       "categories": "apple",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor : Bộ vi xử lý: 2.3GHz dual-core Intel Core i5 (Turbo Boost up to 3.6GHz) Ram: 8GB 2133MHz DDR4 Ổ cứng: 1TB (5400 rpm) Đồ họa: Intel Iris Plus 640 Màn hình: LED Backlit display 21.5 inch Độ phân giải: 1920 x 1080 pixels, với hỗ trợ hàng triệu màu Cổng mạng: Wi-Fi 802.11ac Khả năng tương thích chuẩn IEEE 802.11a/b/g/n, Bluetooth 4.2 Khe cắm: Giắc cắm tai nghe 3,5 mm, Khe cắm thẻ SDXC."
     },
     {
-      "id": "ef070f5c-75a9-4fc8-9d5d-2493eed50415",
-      "title": "Apple Pro Display 6",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/584C9FF3-F587-41EE-8D15-4276CACCA09A.png?t=1662976107",
-      "price": 119000000,
+      "id": "46e8bd74-7e7a-4377-8691-2ebbba179046",
+      "title": " DELL Inspiron 5510 Core I5 11320H 12GB 512GB SSD 15 inch FHD",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/5510.png?t=1672443345",
+      "price": 17990000,
       "salePrice": null,
       "isNew": true,
-      "categories": "apple",
+      "categories": "dell",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor : 11th Generation Intel® Core™ i5-11320H Processor (8 MB Cache, up to 4.5 GHz) 8GB DDR4 3200MHz (2 slot) SSD 256GB M.2 PCIe (2 slot SSD M.2) 15.6-inch FHD (1920x1080), viền mỏng, chống chói. "
+    },
+    {
+      "id": "fa2ef8ad-badb-4950-a853-b839ecc24a36",
+      "title": " DELL XPS 13 9310 (2021) - CORE I5 1135G7 / 16GB / 512GB SSD / INTEL IRIS XE / FHD+",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/38/DELL-XPS-13-9310-2021-H1_vz9k-rf.png?t=1672422261",
+      "price": 33500000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "dell",
+      "quantity": 3,
+      "description": "Processor : Intel Core i5 1135G7 Up To 4.2GHz (4 Cores 8MB Cache) RAM: LPDDR4x 16GB 4267MHz SSD: 512GB PCIe M.2 SSD VGA: Intel® Iris® Xe Graphics DISPLAY: 13.4″ FHD+ 1920*1200 500nits CONDITION: New 100% Full Box – Ship from USA "
+    },
+    {
+      "id": "7a482cf2-afd2-41d1-a240-f7e6934cfd5e",
+      "title": "Dell Precision 5540 - Core i7 9850H 16GB 512GB Quadro T1000 4GB 15.6'' 4K UHD",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/DELL-Precision-5540-Mobile-Workstation-H1.png?t=1672461139",
+      "price": 27900000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "dell",
+      "quantity": 3,
+      "description": "Processor : 9th Gen Intel® Core™ i7-9850H RAM:16GB Dung lượng: SSD512GB NVMe Card đồ họa: Nvidia Quadro T1000 4GB Kích thước màn hình:15.6 inch Độ phân giải:UHD 4K Multi Touch (3840×2160)"
+    },
+    {
+      "id": "d83488c7-0e6d-4a1a-b204-d4202fdbff3c",
+      "title": " Dell Latitude 5320 Core I5 1135G7 16GB 256GB SSD 13.3 inch FHD",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/dell-latitude-5320_1638291533_jsur-2u.png?t=1672410651",
+      "price": 16500000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "dell",
+      "quantity": 3,
+      "description": "Processor :11th Generation Intel® Core i5-1135G7 RAM : 16GB Dung lượng SSD256GB Loại ỗ đĩaM.2 PCIe NVMe Solid State Drive (M.2 SSD) Kích thước màn hình13.3 inch Độ phân giải1920 x 1280 FHD HĐH kèm theo máyWindows 10 Pro 64 Trọng lượng1.18Kg"
+    },
+    {
+      "id": "38b82fe3-36a8-4b6f-9707-82e18504e67d",
+      "title": " DELL G15 5510 (2021) - CORE I7 10870H / 16GB / 512GB SSD / RTX 3060 6GB / FHD 120HZ",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/DELL_G15_wce0-5b_n1df-iz.png?t=1672495436",
+      "price": 29900000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "dell",
+      "quantity": 3,
+      "description": "Processor : Intel Core i7 10870H Up To 5.0GHz (8 Cores 16MB Cache) RAM: DDR4 16GB 2933MHz SSD: 512GB PCIe M.2 SSD VGA: NVIDIA® GeForce RTX™ 3060 6GB GDDR6 DISPLAY: 15.6 inch FHD (1920 x 1080) 120Hz"
+    },
+    {
+      "id": "170a186d-d085-4611-ad04-02b30adf95b5",
+      "title": " DELL Gamming G15 5525 - Ryzen 7 6800H 16GB 512GB RTX 3050Ti",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/6EDB8D9A-7B3E-4C31-B826-86E9C25E600D.png?t=1672430161",
+      "price": 24300000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "dell",
+      "quantity": 3,
+      "description": "Processor : AMD Ryzen™ 7 6800H 8 cores 16 threads (3.2GHz up to 4.7 GHz, 20MB Cache) VGA : Nvidia RTX 3050 Ti 4GB Ram: 16GB DDR5 4800MHz Ổ cứng: 512GB SSD M.2 PCIe Màn hình: 15.6' FHD 120Hz 250 nits 64% sRGB"
     },
     {
       "id": "bf146594-e4e1-4661-a5ed-1cfbaf3c4a00",
@@ -206,104 +391,302 @@
       "isNew": true,
       "categories": "dell",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor : AMD Ryzen™ 7 5800H 8 cores 16 threads (3.2GHz up to 4.7 GHz, 20MB Cache) VGA : Nvidia RTX 3050 Ti 4GB Ram: 16GB DDR5 4800MHz Ổ cứng: 512GB SSD M.2 PCIe Màn hình: 15.6' FHD 120Hz 250 nits 64% sRGB"
     },
     {
-      "id": "4db2e503-ec5c-4e6d-ba4d-9a08bdd975c8",
-      "title": "Alienware M15 R6 (2021) - CORE I7 11800H / 16GB / 512GB SSD / RTX 3060 6GB / QHD 240HZ",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_M15_R6_8a1m-ba_iro8-7u.png?t=1660208774",
-      "price": 42500000,
+      "id": "716a774e-1f58-4886-851c-298d4cc5e2ff",
+      "title": "Alienware M15 -R4 - Core I7 10870H RAM 16GB 512GB NVIDIA RTX 3060 6GB ",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_M15_R6_8a1m-ba_3vfx-f5_6ej1-ek.png?t=1672407748",
+      "price": 31900000,
       "salePrice": null,
       "isNew": true,
       "categories": "dell",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor :10th Gen 6-Core™ i7-10870H (2.7GHz, Upto 5.1GHz, 12MB Cache) RAM: 16GB 3200MHz SSD: 512GB PCIe M.2 SSD VGA: NVIDIA® GeForce RTX™ 3060 6GB 15.6″ FHD (1920 x 1080) 144Hz 3ms 300-nits "
     },
     {
-      "id": "42be6bc1-285f-468b-8dca-0ab9b5eb1a3b",
-      "title": "Alienware M17 R5 (2022) - Ryzen 9 6900H / 16GB / 1TB SSD / RTX 3070 Ti 8GB / FHD 165Hz",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/355C707E-FE0B-440C-B8F3-E6A2B54629C8.png?t=1666951429",
-      "price": 53000000,
+      "id": "e820180a-bb74-4f56-91a0-ac25a91ee2cb",
+      "title": "Alienware M15 -R5 AMD Ryzen 7 5800H 16GB 512GB NVIDIA RTX 3070 Ti 8GB",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_M15_R6_8a1m-ba_3vfx-f5_2wva-gl.png?t=1672419311",
+      "price": 38500000,
       "salePrice": null,
       "isNew": true,
       "categories": "dell",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor :AMD Ryzen™ 7 5800H Base Clock 3.2GHz, Max. Boost Clock Up to 4.4GHz, 8 Cores, 16 Threads RAM: 16GB 3200MHz SSD: 512GB PCIe M.2 SSD VGA: NVIDIA® GeForce RTX™ 3070Ti 8GB DISPLAY: 15.6' FHD (1920 x 1080) 165Hz 3ms with ComfortView Plus"
     },
     {
-      "id": "d4042008-e782-45fb-828e-5dfc441f9f9a",
-      "title": "Alienware X15 R2 (2022) - CORE I7 12700H / 16GB / 512GB SSD / RTX 3070 Ti 8GB / FHD 360HZ",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_x15_R2_3_cblf-dm_wxhv-q6.png?t=1662808625",
-      "price": 59000000,
+      "id": "fe801465-2f2b-4d56-90d7-5b24515a05d7",
+      "title": "Alienware X15 R2 (2022) - CORE I7 12700H / 16GB / 512GB SSD / RTX 3060 6GB / FHD 360HZ",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_x15_R2_3_cblf-dm_wxhv-q6_9xus-br.png?t=1672503380",
+      "price": 57900000,
       "salePrice": null,
       "isNew": true,
       "categories": "dell",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor :Intel Core I7 12700H Up To 4.7GHz (14 Cores 24MB Cache) RAM: DDR4 16GB 3200MHz SSD: 512GB PCIe M.2 SSD VGA: NVIDIA® GeForce RTX™ 3060 6GB GDDR6 DISPLAY: 15.6″ FHD (1920 x 1080) 360Hz 1ms with ComfortView Plus, NVIDIA G-SYNC and Advanced Optimus"
     },
     {
-      "id": "5bea0a69-6345-4f7b-b70c-8a11cbbc5a94",
-      "title": "DELL G15 5510 (2021) - CORE I5 10200H / 8GB / 256GB SSD / RTX 3050 4GB / FHD 120HZ",
-      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/DELL_G15_wce0-5b.png?t=1659804578",
-      "price": 19900000,
+      "id": "e736798f-63d7-46ff-9b93-a633736a644b",
+      "title": "Alienware X15 R1 (2021) - CORE I7 11800H / 32GB / 1TB SSD / RTX 3080 8GB / FHD 360HZ",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware-X15-R1_zvr2-uv.png?t=1672444946",
+      "price": 77000000,
       "salePrice": null,
       "isNew": true,
       "categories": "dell",
       "quantity": 3,
-      "description": "Processor : AMD Ryzen™ 5 5600U Processor (6 Cores / 12 Threads, 2.30 GHz, up to 4.20 GHz with Max Boost, 3 MB Cache L2 / 16 MB Cache L3) Memory : 8 GB DDR4 3200MHz Solid State Drive : 256 GB M.2 2242 SSD Display : 15.6' FHD (1920x1080) IPS Anti-Glare 250nits Narrow Bezel 45% NTSC without Glass Non-Touch Graphic Card : Integrated Graphics Camera : 720p HD Camera with Microphone Wireless : Wireless 2x2 AX & Bluetooth® 5.0 or above"
+      "description": "Processor :Intel Core i7 11800H Up To 4.6GHz (8 Cores 24MB Cache) RAM: DDR4 32GB 3200MHz SSD: 1TB PCIe M.2 SSD VGA: NVIDIA® GeForce RTX™ 3080 8GB GDDR6 DISPLAY: 15.6″ FHD (1920 x 1080) 360Hz 1ms with ComfortView Plus, NVIDIA G-SYNC and Advanced Optimus"
+    },
+    {
+      "id": "dc8d44f5-37df-4b83-a2e3-e29ad7897ca3",
+      "title": "Iphone 14 promax",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/8F445497-4B9C-495D-9423-193518654F66.png?t=1672411848",
+      "price": 33690000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Iphone",
+      "quantity": 3,
+      "description": "Processor :Màn hình: OLED6.7' Super Retina XDR Hệ điều hành: iOS 16 Camera sau: Chính 48 MP & Phụ 12 MP, 12 MP Camera trước: 12 MP Chip: Apple A16 Bionic RAM: 6 GB Dung lượng lưu trữ: 128 GB SIM: 1 Nano SIM & 1 eSIMHỗ trợ 5G Pin, Sạc: 4323 mAh20 W"
+    },
+    {
+      "id": "55a0efc4-5c9a-49a7-b109-e8037b64ec3f",
+      "title": "Iphone 14 pro",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/8F445497-4B9C-495D-9423-193518654F66.png?t=1672411848",
+      "price": 30590000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Iphone",
+      "quantity": 3,
+      "description": "Processor :OLED6.1'Super Retina XDR Hệ điều hành: iOS 16 Camera sau: Chính 48 MP & Phụ 12 MP, 12 MP Camera trước: 12 MP Chip: Apple A16 Bionic RAM: 6 GB Dung lượng lưu trữ: 128 GB SIM: 1 Nano SIM & 1 eSIMHỗ trợ 5G Pin, Sạc: 3200 mAh20 W"
+    },
+    {
+      "id": "57a39c4b-6cbc-4c0b-8093-a5d53a9d0bf9",
+      "title": "Iphone 14 plus",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/D1DF97BB-942D-4895-9E82-F4FA03174125_ekxi-cn.png?t=1672422072",
+      "price": 25990000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Iphone",
+      "quantity": 3,
+      "description": "Processor : OLED6.7'Super Retina XDR Hệ điều hành: iOS 16 Camera sau: 2 camera 12 MP Camera trước 12 MP Chip: Apple A15 Bionic RAM: 6 GB Dung lượng lưu trữ: 128 GB SIM: 1 Nano SIM & 1 eSIMHỗ trợ 5G Pin, Sạc: 4325 mAh20 W"
+    },
+    {
+      "id": "e0e4572f-5214-40ba-a545-db1d8dfdd92f",
+      "title": "Iphone 14",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/D1DF97BB-942D-4895-9E82-F4FA03174125_ekxi-cn.png?t=1672422072",
+      "price": 22900000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Iphone",
+      "quantity": 3,
+      "description": "Processor :OLED6.1' Super Retina XDR Hệ điều hành: iOS 16 Camera sau: 2 camera 12 MP Camera trước: 12 MP Chip: Apple A15 Bionic RAM: 6 GB Dung lượng lưu trữ: 128 GB SIM: 1 Nano SIM & 1 eSIMHỗ trợ 5G Pin, Sạc: 3279 mAh20 W"
+    },
+    {
+      "id": "73a8ef74-042b-4042-95c1-aa9a32f9d632",
+      "title": "Iphone 13 promax",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/iphone_13_pro.png?t=1672425031",
+      "price": 20000000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Iphone",
+      "quantity": 3,
+      "description": "Processor : OLED6.7'Super Retina XDR Hệ điều hành: iOS 15 Camera sau: 3 camera 12 MP Camera trước: 12 MP Chip: Apple A15 Bionic RAM: 6 GB Dung lượng lưu trữ: 128 GB SIM: 1 Nano SIM & 1 eSIMHỗ trợ 5G Pin, Sạc: 4352 mAh20 W"
+    },
+    {
+      "id": "bee745d7-c2ec-49fe-9b80-0474872e302c",
+      "title": "Iphone 13 pro",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/iphone_13_pro.png?t=1672425031",
+      "price": 19000000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Iphone",
+      "quantity": 3,
+      "description": "Processor : OLED6.7' Super Retina XDR Hệ điều hành: iOS 15 Camera sau: 3 camera 12 MP Camera trước: 12 MP Chip: Apple A15 Bionic RAM: 6 GB Dung lượng lưu trữ: 128 GB SIM: 1 Nano SIM & 1 eSIMHỗ trợ 5G Pin, Sạc: 4352 mAh20 W"
+    },
+    {
+      "id": "e6a35c4e-3772-4883-bccd-c39ad8cfa696",
+      "title": "Iphone 13",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/48/iPhone13-2021.png?t=1672426422",
+      "price": 18000000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Iphone",
+      "quantity": 3,
+      "description": "Processor :OLED6.1'Super Retina XDR Hệ điều hành: iOS 15 Camera sau: 2 camera 12 MP Camera trước: 12 M Chip: Apple A15 Bionic RAM: 4 GB Dung lượng lưu trữ: 128 GB SIM: 1 Nano SIM & 1 eSIMHỗ trợ 5G Pin, Sạc: 3240 mAh20 W"
+    },
+    {
+      "id": "2e6d55b7-42ce-49a8-852e-8530ede82e0c",
+      "title": "Airpod 3",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/48/MME73_airpod_3.png?t=1672416544",
+      "price": 3990000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor :- Dùng cho iPhone, Apple Watch, iPad, Mac Spatial Audio + Dynamic Head Tracking Hỗ trợ Dolby Atmos Điều chỉnh nhạc Adaptive EQ theo thời gian thực Kháng nước và mồ hôi IPX4 Thời lượng phát lại đến 6 giờ Thêm đến 24 giờ nhờ hộp sạc"
+    },    
+    {
+      "id": "841b044a-c6e0-4b90-8125-16265dcedc4b",
+      "title": "Airpod Pro - 2021",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/47/FF0F4950-6E11-465B-A633-8FD59689409F.png?t=1672416617",
+      "price": 3990000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor : Tai nghe không dây được Apple thiết kế cho các thiết bị Apple Thiết kế hoàn toàn mới, kiểu in-ear, nhẹ Công nghệ khử tiếng ồn chủ động Chế độ Transparency có thể nghe âm thanh bên ngoài Chuẩn chống mồ hôi và chống nước IPX4"
+    }, 
+    {
+      "id": "3413c789-4a13-4c90-8c0b-91b01d0511bb",
+      "title": " Apple Airpod 2",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/46/APMMEF2ZA_apple_airpods_earphones_white_y6cr-hh.png?t=1672409912",
+      "price": 2890000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor : Thiết kế sang trọng, đẳng cấp Âm thanh rõ ràng, vượt trội, hoàn hảo Thiết kế không dây, nhỏ gọn Tự động thiết lập và kết nối"
+    },  
+    {
+      "id": "4db2952b-a5b3-4674-bb1b-e55a65f51ce7",
+      "title": "APPLE - USB-C VGA Multiport Adapter",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/43/5002.png?t=1672413216",
+      "price": 1590000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor : Dễ thiết lập, dễ sử dụng Xuất hình ảnh Full HD 1080P Hỗ trợ sạc pin cho một số thiết bị tương thích khác"
+    },
+    {
+      "id": "df9d3df3-15df-44d7-a003-a6483da9fe01",
+      "title": "Apple Apple USB C TO USB",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/46/USB-C-to-USB-Adapter_-.png?t=1672742596",
+      "price": 650000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor : USB-C to USB Adapter cho phép bạn kết nối các thiết bị iOS và nhiều phụ kiện tiêu chuẩn USB với một Macbook có cổng USB-C. Cắm USB-C vào cổng USB trên"
+    },
+    {
+      "id": "5448c74c-57b1-48e7-a2f4-5ec1c0b9c938",
+      "title": "APPLE 5W USB POWER ADAPTER",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/47/520D249F-E75F-49D0-9D0F-B1C727644392.png?t=1672632519",
+      "price": 390000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor :Phù hợp với tất cả các dòng iPhone, iPad, iPod. Kết hợp thêm với dây cáp để sạc cho thiết bị khác. Đảm bảo 100% tương thích, không ảnh hưởng đến máy"
+    },
+    {
+      "id": "0845b9b3-05fe-441c-8373-5f2f62ca4c0b",
+      "title": "Apple 96W Cho Macbook Pro 16 inch",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/48/Apple-96W-USB-C.png?t=1672465361",
+      "price": 1250000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor : Công suất 87W Tích hợp cổng USB-C Yêu cầu cáp USB Type-C Dành cho Macbook Pro 15 inch Sạc nhanh và ổn định"
+    },
+    {
+      "id": "120b178b-f6d6-4a8f-9bd2-21fe05e6e9a0",
+      "title": "【 HYPERJUICE 】 Type C 87W DUAL USB-C /QC4.0 /USB-A QC3.0",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/47/AED64618-582C-4959-A995-D73CA4B34C6B.png?t=1672430926",
+      "price": 950000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor :Cuối năm 2018, Hyper lại làm cho người tiêu dùng Macbook toàn cầu phấn khởi hơn vì một sản phẩm sạc hoàn thiện hơn với 2 cổng USBC PD87W Quickcharge 4.0"
+    },
+    {
+      "id": "05e8147f-4044-42fa-865b-da444d9d4024",
+      "title": "Chuột Microsoft Bluetooth Mouse (Arctic Camo)",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Microsoft-BluetoothMouse-ArcticCamo-A.png?t=1672437007",
+      "price": 730000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor :Chuột Microsoft Bluetooth Mouse - Thiết kế hiện đại, nhỏ gọn vừa vặn thoải mái trong tay và giúp bạn dễ dàng làm việc hiệu quả khi di chuyển với khả năng cảm ứng trơn tru trên hầu hết các bề mặt. Microsoft Bluetooth Mouse có nhiều lựa chọn màu sắc để bổ sung cho phong cách của bạn, và thời lượng pin lên tới 12 tháng."
+    },
+    {
+      "id": "0a89950f-5e06-4cf4-9da7-b390a7da07ff",
+      "title": "Chuột Microsoft Bluetooth Mouse (Blue)",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Microsoft-BluetoothMouse-Blue-A.png?t=1672827260",
+      "price": 620000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor :Chuột Microsoft Bluetooth Mouse - Thiết kế hiện đại, nhỏ gọn vừa vặn thoải mái trong tay và giúp bạn dễ dàng làm việc hiệu quả khi di chuyển với khả năng cảm ứng trơn tru trên hầu hết các bề mặt. Microsoft Bluetooth Mouse có nhiều lựa chọn màu sắc để bổ sung cho phong cách của bạn, và thời lượng pin lên tới 12 tháng.Thiết kế nhỏ gọn, hiện đại vừa vặn thoải mái trong tay để cuộn và điều hướng chính xác Hoạt động hiệu quả khi di chuyển với cảm biến trơn tru trên hầu hết các bề mặt. Kết nối không dây Bluetooth, thời lượng pin lên đến 12 tháng"
+    },
+    {
+      "id": "0800b1d2-fe83-43f5-a276-020a8d8687db",
+      "title": "Chuột Microsoft Modern Mobile Mouse (Mint)",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Microsoft-ModernMobileMouse-Mint-A.png?t=1672827418",
+      "price": 780000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "Phụ kiện",
+      "quantity": 3,
+      "description": "Processor :Với Microsoft Modern Mobile Mouse, bạn có thể thoải mái thao tác bất cứ lúc nào. Thiết kế nhẹ, nhỏ gọn giúp thao tác chính xác mà không cần dùng chuột truyền thống cồng kềnh."
     }
   ],
   "cpu": [
     {
-      "id": "afd48db2-15ba-43c1-bf8b-d6e4b2b05a7b",
+      "id": "00c5fe91-a876-48fe-b5d8-2aab0f96052a",
       "name": "Core I5"
     },
     {
-      "id": "ce670d75-8768-4b80-a09d-02825ec61f8d",
+      "id": "f84ef926-1302-4369-80af-2361fd31f1be",
       "name": "Core I7"
     },
     {
-      "id": "f8024769-818a-4126-9d17-20168f879628",
+      "id": "9a6e229f-4996-4e1a-a6f9-2d55bec554fd",
       "name": "M1"
     },
     {
-      "id": "a1eb7eb7-d0fb-4c0d-a5a3-3b395a7f2bbc",
+      "id": "96f0badc-5efb-45f7-9bbd-50757ad0c1af",
       "name": "I9"
     },
     {
-      "id": "0c2ac374-e819-43db-b82c-012de9a2ebcf",
+      "id": "ba1ef1d8-802e-41fb-81c8-6a432505a6a5",
       "name": "Amd Ryzen 5"
     },
     {
-      "id": "d66731e0-60a6-496d-96dc-d7e95413c563",
+      "id": "88d5db2d-463c-4f1a-baeb-ab7e5bcbec69",
       "name": "Amd Ryzen 7"
     }
   ],
   "ssd": [
     {
-      "id": "70aef410-8ead-4823-8acb-c2a898dd8bbc",
+      "id": "33b930d3-8022-485f-b4bd-3cf08e12f399",
       "name": "256GB"
     },
     {
-      "id": "5a57e472-6864-4b7a-bf5a-a3d3c1a1823e",
+      "id": "08281a78-b33e-48e6-8e87-9dce895878c1",
       "name": "512GB"
     },
     {
-      "id": "650f4df2-3177-4449-a3c7-d6370951eae5",
+      "id": "31a7c7b2-db27-4401-ab87-4f3c417b0f6c",
       "name": "1TB"
     }
   ],
   "stateOfProducts": [
     {
-      "id": "e970c12d-35a1-4623-9d7e-d2ff0f2f3552",
+      "id": "6fc0b414-2b5e-43fc-817a-f8a955fbc278",
       "status": "New 100%"
     },
     {
-      "id": "a157a844-79f6-48d8-9939-ae6e7b5153e2",
+      "id": "caaa1398-9ab6-4688-b98d-5449849c9829",
       "status": "Used 99%"
     },
     {
-      "id": "3e475c6e-eea2-4c69-980d-3e50ba9b45b0",
+      "id": "c827a81c-935e-4d43-ad0c-cc3e9ffe6a7d",
       "status": "Used 98%"
     }
   ]
