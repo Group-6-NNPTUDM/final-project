@@ -57,7 +57,7 @@ export default {
     this.totalCount = response.totalCount;
     this.updateNumberOfPaginate(response.totalCount, this.limitItems);
 
-    localStorage.setItem("categoryClick",categoryType);
+    localStorage.setItem("categoryClick", categoryType);
   },
   methods: {
     buildUrlProductById: buildUrlProductById,
@@ -147,7 +147,8 @@ export default {
           <div class="productsfilter_modalyear mt-2">
             <h6 class="fw-bold">Model Year</h6>
             <div class="form-check" v-for="modelYear in dummyModelYear" v-bind:key="modelYear.id">
-              <input class="form-check-input" type="checkbox" value="" id="modelYear" @click="() => handleFilterByModelYear(modelYear)" />
+              <input class="form-check-input" type="checkbox" value="" id="modelYear"
+                @click="() => handleFilterByModelYear(modelYear)" />
               <label class="form-check-label fw-bold" for="flexCheckDefault">
                 {{ modelYear.year }}
               </label>
@@ -175,7 +176,7 @@ export default {
                 {{ product.title }}
                 <a v-bind:href="buildUrlProductById(product.id)">see more</a>
               </p>
-              <p>{{ product.price }}</p>
+              <p>{{ product.price.toLocaleString("it-IT", { style: "currency", currency: "VND" }) }}</p>
             </div>
           </div>
           <!-- Phân trang  -->

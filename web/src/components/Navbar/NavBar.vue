@@ -29,12 +29,14 @@ export default {
 
 <template>
   <div class="container">
-    <div class="row navbar-block" v-if="!isLogged">
-      <div class="col-6">
-        <button type="button" class="btn btn-primary btn-sm" @click="() => this.$router.push('/dang-nhap')">
+    <div class="row navbar" v-if="!isLogged">
+      <div class="col-10"></div>
+
+      <div class="col-2">
+        <button type="button" class="btn btn-light" @click="() => this.$router.push('/dang-nhap')">
           Đăng nhập
         </button>
-        <button type="button" class="btn btn-primary btn-sm" @click="() => this.$router.push('/dang-ky')">
+        <button type="button" class="btn btn-light" @click="() => this.$router.push('/dang-ky')">
           Đăng ký
         </button>
       </div>

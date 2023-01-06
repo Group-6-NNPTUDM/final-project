@@ -8,20 +8,31 @@ export default {
     };
   },
   components: {},
-  methods: {
-    searchKeyword() {
-      const url = this.keyword !== "" ? `/tim-kiem/${this.keyword}` : "/tim-kiem";
 
-      this.$router.push(url);
-    },
+  data() {
+    return {
+      isLogged: false,
+    };
   },
+  mounted() {
+    const user = localStorage.getItem("userLogged");
+    if (user !== null) {
+      this.isLogged = true;
+    }
+  },
+  methods:{
+    logout(){
+      alert("Đăng xuất thành công");
+      this.$router.push('/dang-nhap');
+      localStorage.removeItem('userLogged');
+      
+    }
+  }
+
 };
 </script>
 
 <style>
-.menu-container {
-  margin-top: 20px;
-}
 
 .menu_block {
   background-color: #444444;
@@ -34,7 +45,8 @@ export default {
       <div class="col-2 top-logo">
         <div class="logo-container">
           <a href="http://localhost:8080/">
-            <img src="https://mac24h.vn/images/logos/42/logo-mac24h_zwyz-ad.png?t=1629384503" width="145px" height="46" alt="logo" />
+            <img src="https://mac24h.vn/images/logos/42/logo-mac24h_zwyz-ad.png?t=1629384503" width="145px" height="46"
+              alt="logo" />
           </a>
         </div>
       </div>
@@ -59,6 +71,10 @@ export default {
             </li>
             <li>
               <a href="#" class="nav-link text-white">Hỗ Trợ</a>
+            </li>
+            
+            <li v-if="isLogged">
+              <a href="#" class="nav-link text-white" @click="logout">Đăng xuất</a>
             </li>
           </ul>
         </div>

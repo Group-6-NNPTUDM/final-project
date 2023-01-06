@@ -16,11 +16,7 @@
             </div>
             <div class="row product-title">
               <span>
-                <button
-                  class="btn btn-primary btn-sm"
-                  type="button"
-                  style="margin-right: 10px"
-                >
+                <button class="btn btn-primary btn-sm" type="button" style="margin-right: 10px">
                   Thích
                   <font-awesome-icon icon="fa-thin fa-thumbs-up" />
                 </button>
@@ -48,8 +44,7 @@
                   <p>Bảo hành : 1 tháng</p>
                 </div>
                 <div class="product_quantity">
-                  <span
-                    >Còn hàng không? :
+                  <span>Còn hàng không? :
                     <strong v-if="product.quantity > 0">Còn hàng</strong>
                     <strong v-else>Hết hàng</strong>
                   </span>
@@ -61,24 +56,21 @@
                   </span>
                 </div>
                 <div class="row">
-                
-                    <button @click="addData" type="button" class="btn btn-success">
+
+                  <button @click="addData" type="button" class="btn btn-success">
                     Thêm vào giỏ hàng
                   </button>
                 </div>
 
-            </div>
+              </div>
               <!-- Banner and Phone Number  -->
               <div class="col-6">
-                <div
-                  class="row"
-                  style="
+                <div class="row" style="
                     width: 100%;
                     height: auto;
                     border: 1px solid #ccc;
                     margin-left: 2px;
-                  "
-                >
+                  ">
                   <div class="phone">
                     <span>Hồ Chí Minh :</span> 0919 011 011
                     <br />
@@ -96,10 +88,8 @@
                   </div>
                 </div>
                 <div class="row" style="margin-top: 10px">
-                  <img
-                    src="https://mac24h.vn/images/promo/49/68540C4C-BE27-48B2-A3AF-7EAA78738021.jpeg?t=1666949572"
-                    alt=""
-                  />
+                  <img src="https://mac24h.vn/images/promo/49/68540C4C-BE27-48B2-A3AF-7EAA78738021.jpeg?t=1666949572"
+                    alt="" />
                 </div>
               </div>
             </div>
@@ -143,25 +133,25 @@ export default {
   },
   //Lỗi đoạn này 
   methods: {
-      addData(){
-        const list = JSON.parse(localStorage.getItem("productCart"));
-        if(list!=null){
-          this.productCart = list;
-          const index = this.productCart.findIndex(x=>x.id==this.product.id);
-          if (index!=-1){
-            
-            this.productCart[index].count ++;
-          }else{
-            this.product.count=1;
-            this.productCart.push(this.product);
-          }
-        }else{
-          this.product.count=1;
+    addData() {
+      const list = JSON.parse(localStorage.getItem("productCart"));
+      if (list != null) {
+        this.productCart = list;
+        const index = this.productCart.findIndex(x => x.id == this.product.id);
+        if (index != -1) {
+
+          this.productCart[index].count++;
+        } else {
+          this.product.count = 1;
           this.productCart.push(this.product);
         }
-        localStorage.setItem("productCart",JSON.stringify(this.productCart))
-        this.$router.push("/gio-hang/") ;
+      } else {
+        this.product.count = 1;
+        this.productCart.push(this.product);
       }
+      localStorage.setItem("productCart", JSON.stringify(this.productCart))
+      this.$router.push("/gio-hang/");
+    }
   }
 };
 
