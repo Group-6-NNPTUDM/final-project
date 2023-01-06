@@ -19,8 +19,7 @@
 
               <td>{{ product.title }}</td>
               <td><img :src="product.img" width="100" /></td>
-              <td><input type="number" @input="updateList(product.id, product.count)" v-model="product.count" min="1"
-                  max="99" /></td>
+              <td><input type="number" @input="updateList(product.id, product.count)" v-model="product.count" /></td>
               <td>{{ product.price }}</td>
               <td>{{ result(product.count, product.price) }}</td>
               <td><a href="#" @click="() => deleteItem(product.id)" class="btn-delete">Xoá</a></td>
@@ -47,6 +46,7 @@ export default {
       products: [],
       total: 0,
       returnPage: "",
+      count:0,
     }
 
   },
@@ -79,7 +79,12 @@ export default {
     updateList(id, number) {
       var res2 = String(number).replace(/\D/g, "");
       number = Number(res2);
+
       const index = this.ProductsCart.findIndex(x => x.id == id);
+      if(number>this.ProductsCart[index].quantity){
+        alert("Hàng nhập vào lớn hơn hàng tồn kho")
+        number=1;
+      }
       this.ProductsCart[index].count = number;
       localStorage.setItem("productCart", JSON.stringify(this.ProductsCart));
       const sum = this.ProductsCart.reduce((acc, item) => acc + (Number(String(item.price).replace(/\D/g, "")) * item.count), 0);
@@ -101,6 +106,8 @@ export default {
       const index = this.ProductsCart.findIndex(x => x.id == id);
       this.ProductsCart.splice(index, 1);
       localStorage.setItem("productCart", JSON.stringify(this.ProductsCart));
+      const sum = this.ProductsCart.reduce((acc, item) => acc + (Number(String(item.price).replace(/\D/g, "")) * item.count), 0);
+      this.total = sum.toLocaleString("it-IT", { style: "currency", currency: "VND" });
     }
   }
 };

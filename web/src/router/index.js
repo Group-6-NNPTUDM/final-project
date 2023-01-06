@@ -27,9 +27,11 @@ const routes = [
     component: () => import("../views/LoginView.vue"),
   },
   {
+
     path: '/san-pham/:id',
     component: () => import('../views/ProductView.vue')
   },
+
   {
     path: "/danh-muc-san-pham/:category",
     component: () => import("../views/ProductsView.vue"),
@@ -45,6 +47,14 @@ const routes = [
   {
     path: "/thanh-toan",
     component: () => import("../views/PayView.vue"),
+  },
+  {
+    path: "/tim-kiem/:keyword",
+    component: () => import("../views/SearchView.vue"),
+  },
+  {
+    path: "/tim-kiem",
+    component: () => import("../views/SearchView.vue"),
   },
 ];
 

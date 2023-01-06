@@ -2,15 +2,34 @@
 <script>
 export default {
   name: "Header",
-  components: {},
+  data() {
+    return {
+      keyword: "",
+      isLogged: false,
+    };
+  },
+  mounted() {
+    const user = localStorage.getItem("userLogged");
+    if (user !== null) {
+      this.isLogged = true;
+    }
+  },
+  methods:{
+    logout(){
+      alert("Đăng xuất thành công");
+      this.$router.push('/dang-nhap');
+      localStorage.removeItem('userLogged');
+    },
+        searchKeyword() {
+      const url = this.keyword !== "" ? `/tim-kiem/${this.keyword}` : "/tim-kiem";
+      this.$router.push(url);
+    },
+  }
+
 };
 </script>
 
 <style>
-.menu-container {
-  margin-top: 20px;
-}
-
 .menu_block {
   background-color: #444444;
 }
@@ -22,8 +41,7 @@ export default {
       <div class="col-2 top-logo">
         <div class="logo-container">
           <a href="http://localhost:8080/">
-            <img src="https://mac24h.vn/images/logos/42/logo-mac24h_zwyz-ad.png?t=1629384503" width="145px" height="46"
-              alt="logo" />
+            <img :src="'https://mac24h.vn/images/logos/42/logo-mac24h_zwyz-ad.png?t=1629384503'" width="145" height="46" alt="logo" />
           </a>
         </div>
       </div>
@@ -49,6 +67,10 @@ export default {
             <li>
               <a href="#" class="nav-link text-white">Hỗ Trợ</a>
             </li>
+
+            <li v-if="isLogged">
+              <a href="#" class="nav-link text-white" @click="logout">Đăng xuất</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -62,7 +84,7 @@ export default {
             active-cyan-2
             mt-2
           ">
-          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search" />
+          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search" v-model="keyword" v-on:keydown.enter.prevent="searchKeyword()" />
           <i class="fas fa-search" aria-hidden="true"></i>
         </form>
       </div>

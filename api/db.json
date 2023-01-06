@@ -6,13 +6,31 @@
       "password": "2412Vantam",
       "isDeleted": false,
       "loginCount": 0
+    },
+    {
+      "id": "b2ea4b24-53fe-41fd-9b0e-d7108ea4ceda",
+      "email": "dasdas@gmail.com",
+      "password": "251200",
+      "isDeleted": false,
+      "loginCount": 0,
+      "createdAt": 1672846534570
+    },
+    {
+      "id": "ba689b09-da32-4939-b2d1-8f0e66067926",
+      "email": "facebookteopro@gmail.com",
+      "password": "251200",
+      "isDeleted": false,
+      "loginCount": 0,
+      "createdAt": 1672846609673
     }
   ],
   "categories": [
     {
       "id": "f661b238-b48a-4aea-a4ce-35dfdb5e4fec",
       "title": "Lenovo",
-      "series": ["ThinkPad L - E series"]
+      "series": [
+        "ThinkPad L - E series"
+      ]
     },
     {
       "id": "cf3763e9-fcce-4745-818e-68c84c118312",
@@ -65,11 +83,11 @@
                   "Dell precision",
                   "Dell inspiron",
                   "Dell latitude",
-                  "Dell - Gaming"]
+                  "Dell - Gaming" 
+                ]
     }
-  ],
+    ],
   "products": [
-  
     {
       "id": "73417929-0510-431b-82d4-78f5dd320707",
       "title": "ThinkPad X1 Carbon Gen 9 4K HDR- Core i7 1165G7 32GB 512GB SSD",
@@ -187,10 +205,6 @@
       "modelYear": 2020,
       "description": "Processor : 10th Gen Intel® Core™ i7 10510U Processor (8MB Cache, up to 4.9GHz) RAM: 16GB DDR4 2666 MHz Đĩa cứng: 512GB M.2 PCIe NVMe Solid State Drive (M.2 SSD) Màn hình: 15' FHD (1920 x 1080), IPS, anti-glare, 250nits Card đồ họa: nVidia MX330M 2GB "
     },
-
-
-
-
     {
       "id": "b7d729b1-ba20-4431-878c-312c16321cc6",
       "title": "Macbook Pro 13 inch 2019 - Core I5 16GB 256GB SSD (MV962)",
@@ -269,6 +283,7 @@
       "description": "Processor :2.4GHz 8-core 9th-generation Intel Core i9 processor Turbo Boost up to 5.0GHz AMD Radeon Pro 5500M with 4GB of GDDR6 memory 64GB 2666MHz DDR4 memor 512GB SSD storage¹ 16-inch Retina display with True Tone Touch Bar and Touch ID Four Thunderbolt 3 ports"
     },
     {
+
       "id": "451876ab-0340-47f2-9658-c8afb88839da",
       "title": "Macbook Air 2020 13 inch Core I5 8GB 256GB ( Z0YJ0 - CTO ) New 99%",
       "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/48/macbook_air_2020_mwtj2_space_gray.png?t=1672419199",
@@ -301,10 +316,6 @@
       "quantity": 3,
       "description": "Processor : Bộ vi xử lý: 2.3GHz dual-core Intel Core i5 (Turbo Boost up to 3.6GHz) Ram: 8GB 2133MHz DDR4 Ổ cứng: 1TB (5400 rpm) Đồ họa: Intel Iris Plus 640 Màn hình: LED Backlit display 21.5 inch Độ phân giải: 1920 x 1080 pixels, với hỗ trợ hàng triệu màu Cổng mạng: Wi-Fi 802.11ac Khả năng tương thích chuẩn IEEE 802.11a/b/g/n, Bluetooth 4.2 Khe cắm: Giắc cắm tai nghe 3,5 mm, Khe cắm thẻ SDXC."
     },
-
-
-
-
     {
       "id": "46e8bd74-7e7a-4377-8691-2ebbba179046",
       "title": " DELL Inspiron 5510 Core I5 11320H 12GB 512GB SSD 15 inch FHD",
@@ -372,6 +383,17 @@
       "description": "Processor : AMD Ryzen™ 7 6800H 8 cores 16 threads (3.2GHz up to 4.7 GHz, 20MB Cache) VGA : Nvidia RTX 3050 Ti 4GB Ram: 16GB DDR5 4800MHz Ổ cứng: 512GB SSD M.2 PCIe Màn hình: 15.6' FHD 120Hz 250 nits 64% sRGB"
     },
     {
+      "id": "bf146594-e4e1-4661-a5ed-1cfbaf3c4a00",
+      "title": "Alienware M15 -R5 AMD Ryzen 7 5800H 16GB 512GB NVIDIA RTX 3070 Ti 8GB",
+      "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_M15_R6_8a1m-ba_3vfx-f5_2wva-gl.png?t=1667284358",
+      "price": 38500000,
+      "salePrice": null,
+      "isNew": true,
+      "categories": "dell",
+      "quantity": 3,
+      "description": "Processor : AMD Ryzen™ 7 5800H 8 cores 16 threads (3.2GHz up to 4.7 GHz, 20MB Cache) VGA : Nvidia RTX 3050 Ti 4GB Ram: 16GB DDR5 4800MHz Ổ cứng: 512GB SSD M.2 PCIe Màn hình: 15.6' FHD 120Hz 250 nits 64% sRGB"
+    },
+    {
       "id": "716a774e-1f58-4886-851c-298d4cc5e2ff",
       "title": "Alienware M15 -R4 - Core I7 10870H RAM 16GB 512GB NVIDIA RTX 3060 6GB ",
       "img": "https://mac24h.vn/images/thumbnails/290/290/detailed/49/Alienware_M15_R6_8a1m-ba_3vfx-f5_6ej1-ek.png?t=1672407748",
@@ -415,11 +437,6 @@
       "quantity": 3,
       "description": "Processor :Intel Core i7 11800H Up To 4.6GHz (8 Cores 24MB Cache) RAM: DDR4 32GB 3200MHz SSD: 1TB PCIe M.2 SSD VGA: NVIDIA® GeForce RTX™ 3080 8GB GDDR6 DISPLAY: 15.6″ FHD (1920 x 1080) 360Hz 1ms with ComfortView Plus, NVIDIA G-SYNC and Advanced Optimus"
     },
-
-
-
-
-
     {
       "id": "dc8d44f5-37df-4b83-a2e3-e29ad7897ca3",
       "title": "Iphone 14 promax",
@@ -497,10 +514,6 @@
       "quantity": 3,
       "description": "Processor :OLED6.1'Super Retina XDR Hệ điều hành: iOS 15 Camera sau: 2 camera 12 MP Camera trước: 12 M Chip: Apple A15 Bionic RAM: 4 GB Dung lượng lưu trữ: 128 GB SIM: 1 Nano SIM & 1 eSIMHỗ trợ 5G Pin, Sạc: 3240 mAh20 W"
     },
-
-
-
-
     {
       "id": "2e6d55b7-42ce-49a8-852e-8530ede82e0c",
       "title": "Airpod 3",
@@ -622,7 +635,6 @@
       "quantity": 3,
       "description": "Processor :Với Microsoft Modern Mobile Mouse, bạn có thể thoải mái thao tác bất cứ lúc nào. Thiết kế nhẹ, nhỏ gọn giúp thao tác chính xác mà không cần dùng chuột truyền thống cồng kềnh."
     }
-
   ],
   "cpu": [
     {

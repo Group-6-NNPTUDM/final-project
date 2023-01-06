@@ -11,6 +11,13 @@ export default {
       this.isLogged = true;
     }
   },
+  methods: {
+    logout() {
+      localStorage.removeItem("userLogged");
+
+      this.$router.push('/dang-nhap')
+    }
+  }
 };
 </script>
 
@@ -33,10 +40,19 @@ export default {
           Đăng ký
         </button>
       </div>
-
     </div>
-    <div class="row navbar-block" v-else>
-      <div class="col-12">Đăng nhập thành công</div>
+    <div class="row navbar-block mt-3" v-else>
+      <div class="col-8">
+        <p class="fw-bold">
+          Đăng nhập thành công
+        </p>
+      </div>
+      <button type="button" class="btn btn-outline-primary btn-sm col-2" @click="logout">
+        Đăng xuất
+      </button>
+      <button type="button" class="btn btn-outline-primary btn-sm col-2" @click="() => this.$router.push('/gio-hang')">
+        Giỏ Hàng
+      </button>
     </div>
   </div>
 </template>
