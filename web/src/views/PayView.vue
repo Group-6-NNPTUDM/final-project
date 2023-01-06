@@ -1,82 +1,79 @@
 <template>
-    <div>
-        <Header />
+  <div>
+    <Header />
 
-        <div class="row" style="margin:auto">
-            <div class="my-swapper col-sm-8" style="margin-left:100px">
-                <div class="form-horizontal">
-                    <h4>Thanh toán</h4>
-                    <hr />
-                    <form ref="form" @submit.prevent="sendEmail">
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="my-a-infor">Tên người nhận: </div>
-                            <input class="input-text" name="to_name" type="text" v-model="this.name" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="my-a-infor">Số điện thoại: </div>
-                            <input class="input-text" name="to_sdt" type="text" v-model=" this.phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength=12/>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="my-a-infor">Địa chỉ: </div>
-                            <input class="input-text" name="to_address" type="text" v-model=" this.address"/>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="my-a-infor">Email: </div>
-                            <input class="input-text" name="to_email"  type="text" style="margin-bottom:20px" v-model="this.email"/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="my-a-infor">Ghi chú: </div>
-                            <textarea class="input-text" name="message" type="" style="margin-bottom:20px" v-model="this.message"/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <input style="width:45%; margin: auto" type="submit" value="Thanh toán"
-                                class="btn btn-outline-success" />
-                            <a class="btn btn-outline-danger" style="width:45%; margin: auto" href="/gio-hang/">Quay lại</a>
-                        </div>
-                    </div>
-                </form>
-                </div>
+    <div class="row" style="margin:auto">
+      <div class="my-swapper col-sm-8" style="margin-left:100px">
+        <div class="form-horizontal">
+          <h4>Thanh toán</h4>
+          <hr />
+          <form ref="form" @submit.prevent="sendEmail">
+            <div class="form-group">
+              <div class="row">
+                <div class="my-a-infor">Tên người nhận: </div>
+                <input class="input-text" name="to_name" type="text" v-model="this.name" />
+              </div>
             </div>
-            <div class="my-swapper col-sm-4">
-                <h3>HOÁ ĐƠN</h3>
-                <table>
-                    <tr>
-                        <th>Tên sản phẩm</th>
-                        <th>Số lượng</th>
-                        <th>Tổng tiền</th>
-                    </tr>
-                    <tr v-for="product in ProductsCart" :key="(product.id)">
-                        <td>{{ product.title }}</td>
-                        <td>{{ product.count }}</td>
-                        <td>{{ result(product.count, product.price) }}</td>
-                    </tr>
-
-
-          <div class="form-group">
-            <div class="row">
-              <div class="my-a-infor">Email:</div>
-              <input class="input-text" type="text" style="margin-bottom: 20px" />
+            <div class="form-group">
+              <div class="row">
+                <div class="my-a-infor">Số điện thoại: </div>
+                <input class="input-text" name="to_sdt" type="text" v-model=" this.phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength=12 />
+              </div>
             </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="my-a-infor">Địa chỉ: </div>
+                <input class="input-text" name="to_address" type="text" v-model=" this.address" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="my-a-infor">Email: </div>
+                <input class="input-text" name="to_email" type="text" style="margin-bottom:20px" v-model="this.email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="my-a-infor">Ghi chú: </div>
+                <textarea class="input-text" name="message" type="" style="margin-bottom:20px" v-model="this.message" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <input style="width:45%; margin: auto" type="submit" value="Thanh toán" class="btn btn-outline-success" />
+                <a class="btn btn-outline-danger" style="width:45%; margin: auto" href="/gio-hang/">Quay lại</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="my-swapper col-sm-4">
+        <h3>HOÁ ĐƠN</h3>
+        <table>
+          <tr>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Tổng tiền</th>
+          </tr>
+          <tr v-for="product in ProductsCart" :key="(product.id)">
+            <td>{{ product.title }}</td>
+            <td>{{ product.count }}</td>
+            <td>{{ result(product.count, product.price) }}</td>
+          </tr>
+        </table>
+        <div class="form-group">
+          <div class="row">
+            <div class="my-a-infor">Email:</div>
+            <input class="input-text" type="text" style="margin-bottom: 20px" />
           </div>
+        </div>
 
-          <div class="form-group">
-            <div class="row">
-              <input style="width: 45%; margin: auto" type="submit" value="Thanh toán" class="btn btn-outline-success" />
-              <a class="btn btn-outline-danger" style="width: 45%; margin: auto" href="/gio-hang/">Quay lại</a>
-            </div>
+        <div class="form-group">
+          <div class="row">
+            <input style="width: 45%; margin: auto" type="submit" value="Thanh toán" class="btn btn-outline-success" />
+            <a class="btn btn-outline-danger" style="width: 45%; margin: auto" href="/gio-hang/">Quay lại</a>
           </div>
         </div>
       </div>
