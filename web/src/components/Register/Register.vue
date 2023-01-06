@@ -89,8 +89,6 @@ return{
 
   }
 }
-
-
 </script>
 
 <!-- This place for css -->
