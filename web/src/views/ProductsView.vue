@@ -158,35 +158,39 @@ export default {
         <div class="col-10">
           <h4 class="row category-title fw-bold">Mac Store</h4>
           <div v-show="categoryType === 'apple'">
-            <h6 class="text-center fw-bold">{{ APPLE_DESC.title }}</h6>
-            <p>{{ APPLE_DESC.desc }}</p>
+            <h6 style="text-align: left right" class="text-center fw-bold">{{ APPLE_DESC.title }}</h6>
+            <p style="text-align: justify">{{ APPLE_DESC.desc }}</p>
           </div>
           <div v-show="categoryType === 'lenovo'">
-            <h6 class="text-center fw-bold">{{ THINKPAD_DESC.title }}</h6>
-            <p>{{ THINKPAD_DESC.desc }}</p>
+            <h6  class="text-center fw-bold">{{ THINKPAD_DESC.title }}</h6>
+            <p style="text-align: justify">{{ THINKPAD_DESC.desc }}</p>
           </div>
           <div v-show="categoryType === 'dell'">
             <h6 class="text-center fw-bold">{{ DELL_DESC.title }}</h6>
-            <p>{{ DELL_DESC.desc }}</p>
+            <p style="text-align: justify">{{ DELL_DESC.desc }}</p>
           </div>
           <div class="row category-description">
             <div v-for="product in products" :key="product.id" class="col-4">
-              <img :src="product.img" alt="" />
-              <p>
-                {{ product.title }}
-                <a v-bind:href="buildUrlProductById(product.id)">see more</a>
-              </p>
-              <p>{{ product.price.toLocaleString("it-IT", { style: "currency", currency: "VND" }) }}</p>
+              <div class="card" style="height: 30rem; width: 20rem;">
+              <img class="card-img-top" :src="product.img" alt="" />
+              <div class="card-body">
+              <p style="text-align:left">
+                {{ product.title }}</p>
+                <h5 ><a v-bind:href="buildUrlProductById(product.id)">See more</a></h5>
+              <h5 class="text-danger"><strong>{{ product.price.toLocaleString("it-IT", { style: "currency", currency: "VND" }) }}</strong></h5>
             </div>
           </div>
+          </div>
+          </div>
           <!-- Phân trang  -->
-          <nav aria-label="Page navigation example">
-            <ul class="pagination" v-if="numberOfPaginateBtn > 1">
-              <li class="page-item" v-for="(btn, index) in numberOfPaginateBtn" :key="index">
-                <button @click="() => handlePaginationBtnClick(index + 1)">
-                  {{ btn }}
-                </button>
+          <nav aria-label="...">
+            <ul class="pagination pagination-lg" v-if="numberOfPaginateBtn > 1">
+              <div class="page-item" v-for="(btn, index) in numberOfPaginateBtn" :key="index">
+              <li class="page-item"><a class="page-link"  @click="() => handlePaginationBtnClick(index + 1)">
+                {{ btn }}
+              </a>
               </li>
+            </div>
             </ul>
           </nav>
         </div>

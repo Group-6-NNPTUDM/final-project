@@ -5,6 +5,7 @@ import ProductDetail from "../components/ProductDetail/ProductDetail.vue";
 import CategoriesType from "../constants/categoriesConstant";
 import NavBarVue from "@/components/Navbar/NavBar.vue";
 import { getItemsByCategory } from "@/services/productsService"
+import {buildUrlProductById} from '../services/productsService';
 
 export default {
   data() {
@@ -15,6 +16,10 @@ export default {
         dell: [],
       },
     };
+    
+  },
+  method: {
+    buildUrlProductById : buildUrlProductById
   },
   async mounted() {
     this.products.lenovo = await getItemsByCategory(CategoriesType.LENOVO);
@@ -87,7 +92,8 @@ export default {
             <ProductDetail :data="products.lenovo" />
           </div>
           <div class="col-3" style="height: auto">
-            <img style="width: 100%; height: 100%" src="https://mac24h.vn/images/companies/1/ThinkPad/T14Giam1tr.JPG?1629468259506" alt="" />
+            <img style="width: 100%; height: 100%" src="https://mac24h.vn/images/companies/1/ThinkPad/T14Giam1tr.JPG?1629468259506" alt=""/>
+
           </div>
         </div>
         <!-- Apple Menu -->

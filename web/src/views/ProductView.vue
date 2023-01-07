@@ -10,12 +10,12 @@
           </div>
           <div class="col-8">
             <div class="row">
-              <h5>
+              <h4 style="text-align: left">
                 <strong>{{ product.title }}</strong>
-              </h5>
+              </h4>
             </div>
             <div class="row product-title">
-              <span>
+              <p>
                 <button class="btn btn-primary btn-sm" type="button" style="margin-right: 10px">
                   Thích
                   <font-awesome-icon icon="fa-thin fa-thumbs-up" />
@@ -23,44 +23,44 @@
                 <button class="btn btn-primary btn-sm" type="button">
                   Chia sẻ
                 </button>
-              </span>
+              </p>
             </div>
 
             <div class="row">
               <div class="col-6 price-block">
                 <div class="product_discounted_price">
-                  <p>Giá bán: {{ product.price }}</p>
-                  <p>Phí giao hàng : 0đ</p>
+                  <p><b>Giá bán:</b> {{ product.price }}</p>
+                  <p><b>Phí giao hàng:</b> 0đ</p>
                 </div>
                 <!-- Condition Rendering  -->
                 <div v-if="product.isNew" class="product-info">
-                  <h6>Thông tin khuyến mại và bảo hành</h6>
+                  <h5 style="text-align:left"><b>Thông tin khuyến mại và bảo hành</b></h5>
                   <p>New 100%</p>
                   <p>Bảo hành : 12 tháng</p>
                 </div>
                 <div v-else class="product-info">
-                  <h6>Thông tin khuyến mại và bảo hành</h6>
+                  <h6> <b>Thông tin khuyến mại và bảo hành</b></h6>
                   <p>Hàng 99%</p>
-                  <p>Bảo hành : 1 tháng</p>
+                  <p> <b>Bảo hành:</b> 1 tháng</p>
                 </div>
                 <div class="product_quantity">
-                  <span>Còn hàng không? :
-                    <strong v-if="product.quantity > 0">Còn hàng</strong>
-                    <strong v-else>Hết hàng</strong>
+                  <span style="text-align:left"><b>Còn hàng không?:</b>
+                    <strong class="text-success" v-if="product.quantity > 0"> Còn hàng</strong>
+                    <strong class="text-danger " v-else>Hết hàng</strong>
                   </span>
                 </div>
-                <div>
-                  <h6><strong>Mô tả đặc tính</strong></h6>
-                  <span>
-                    {{ product.description }}
-                  </span>
-                </div>
-                <div class="row">
-
+                <div class="row pt-3" style="padding-bottom:20px" >
                   <button @click="addData" type="button" class="btn btn-success">
                     Thêm vào giỏ hàng
                   </button>
                 </div>
+                <div>
+                  <h6><strong>Mô tả đặc tính</strong></h6>
+                  <p style="text-align: justify">
+                    {{ product.description }}
+                  </p>
+                </div>
+
 
               </div>
               <!-- Banner and Phone Number  -->
@@ -72,18 +72,18 @@
                     margin-left: 2px;
                   ">
                   <div class="phone">
-                    <span>Hồ Chí Minh :</span> 0919 011 011
+                    <span><b>Hồ Chí Minh:</b></span> 0919 011 011
                     <br />
                   </div>
-                  <div class="phone"><span>Hà Nội :</span> 0964 600 600</div>
+                  <div class="phone"><span> <b>Hà Nội:</b></span> 0964 600 600</div>
                   <div class="delivery">
-                    <ul style="list-style: none">
+                    <ul style="list-style: none;padding-left:60px">
                       <li>Thanh toán thẻ ATM miễn phí</li>
                       <li>
                         Thanh toán thẻ MASTER, VISA <strong>+1.5%</strong>
                       </li>
-                      <li>Trả Góp: Trả trước 30% +CMND+Hộ khẩu / Bằng lái</li>
-                      <li>Trả Góp: Dùng thẻ tín dụng lãi suất 0%</li>
+                      <li><b>Trả Góp:</b> Trả trước 30% +CMND+Hộ khẩu / Bằng lái</li>
+                      <li><b>Trả Góp:</b> Dùng thẻ tín dụng lãi suất 0%</li>
                     </ul>
                   </div>
                 </div>
@@ -170,5 +170,6 @@ const getProductInfomation = async (id) => {
   border-top: dashed 1px #ccc;
   margin-top: 10px;
 }
+
 </style>
 

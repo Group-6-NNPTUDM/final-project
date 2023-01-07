@@ -57,8 +57,8 @@ function buildSearchUrl(keyword) {
             <img :src="product.img" class="card-img-top" alt="#">
             <div class="card-body">
               <h5 class="card-title">{{product.title}}</h5>
-              <p class="card-text">{{product.price}}</p>
-              <a v-bind:href="buildUrlProductById(product.id)">see more</a>
+              <h5 class="text-danger"><strong>{{ product.price.toLocaleString("it-IT", { style: "currency", currency: "VND" }) }}</strong></h5>
+              <h5 ><a v-bind:href="buildUrlProductById(product.id)">See more</a></h5>
             </div>
           </div>
         </div>

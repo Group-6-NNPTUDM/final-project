@@ -41,7 +41,7 @@ export default {
         </button>
       </div>
     </div>
-    <div class="row navbar-block mt-3" v-else>
+    <div class="row mt-3" v-else>
       <div class="col-8">
         <p class="fw-bold">
           Đăng nhập thành công
