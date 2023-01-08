@@ -62,6 +62,19 @@ return{
             alert("Điền đầy đủ thông tin");
             return;
       }
+      if(this.password.length<5) 
+      {
+            alert("Mật khẩu phải lớn hơn 6 ký tự");
+            return;
+      }
+      if(this.password.search(/[a-zA-Z]/) == -1) {
+        alert("Phải chứa ký tự chữ");
+        return;
+      }
+      if(this.password.search(/\d/) == -1) {
+        alert("Phải chứa ký tự số");
+        return;
+      }
       if(this.password != this.Repassword) 
       {
             alert("Mật khẩu lặp lại không đúng");
